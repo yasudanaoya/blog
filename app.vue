@@ -1,4 +1,7 @@
 <template lang="pug">
 div
-  NuxtWelcome
+  q-btn(
+    label="sample"
+  )
+
 </template>
