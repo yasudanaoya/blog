@@ -11,12 +11,30 @@ div
         q-route-tab(name="home" icon="home" label="Home" to="/")
         q-route-tab(name="about" icon="face" label="About" to="/about")
         q-route-tab(name="blog" icon="newspaper" label="Blog" to="/blog")
+
+      q-toggle(
+        v-model="darkMode"
+        checked-icon="dark_mode"
+        unchecked-icon="light_mode"
+        @click="changeMode"
+      )
   slot
   q-footer(elevated)
     q-toolbar
       q-toolbar-title
         | Footer
 </template>
+
+<script setup lang="ts">
+import { useQuasar } from 'quasar';
+const q = useQuasar();
+
+const darkMode = ref(false);
+
+const changeMode = async (): Promise<void> => {
+  q.dark.set(darkMode.value);
+};
+</script>
 
 <style lang="scss" scoped>
 .q-tabs__arrow {
