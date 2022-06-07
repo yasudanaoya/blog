@@ -1,8 +1,7 @@
 <template lang="pug">
-div
-  q-layout
-    nuxt-layout
+q-layout
+  nuxt-layout
 
-    q-page-container
-      nuxt-page
+  q-page-container
+    nuxt-page
 </template>
