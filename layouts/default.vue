@@ -14,6 +14,7 @@ div
 
       q-toggle(
         v-model="darkMode"
+        size="xl"
         checked-icon="dark_mode"
         unchecked-icon="light_mode"
         @click="changeMode"
