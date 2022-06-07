@@ -38,7 +38,7 @@ const changeMode = async (): Promise<void> => {
 </script>
 
 <style lang="scss" scoped>
-.q-tabs__arrow {
+i.q-icon.notranslate.material-icons.q-tabs__arrow.q-tabs__arrow--right.absolute.q-tab__icon {
   // NOTE: this is a workaround for the issue with the q-tabs component
   display: none;
 }
