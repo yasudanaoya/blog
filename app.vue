@@ -4,6 +4,5 @@ div
     nuxt-layout
 
     q-page-container
-      q-page
-        nuxt-page
+      nuxt-page
 </template>

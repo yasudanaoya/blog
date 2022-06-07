@@ -707,6 +707,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxtjs/supabase@npm:^0.1.16":
+  version: 0.1.16
+  resolution: "@nuxtjs/supabase@npm:0.1.16"
+  dependencies:
+    "@nuxt/kit": ^3.0.0-rc.3
+    "@supabase/supabase-js": ^1.35.3
+    defu: ^6.0.0
+    pathe: ^0.3.0
+  checksum: e51af743fba3648c0a79edc9f670bb9f0a9676f8b975c46baada9b966f02cbf9853fba7e0b8c81511797714f6a9740c19e5b087e85dd1fdb35962d110466e541
+  languageName: node
+  linkType: hard
+
 "@quasar/extras@npm:^1.14.0":
   version: 1.14.0
   resolution: "@quasar/extras@npm:1.14.0"
@@ -6572,6 +6584,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@nuxtjs/supabase": ^0.1.16
     "@quasar/extras": ^1.14.0
     "@quasar/vite-plugin": ^1.0.10
     "@supabase/supabase-js": ^1.35.3

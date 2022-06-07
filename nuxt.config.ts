@@ -9,8 +9,5 @@ export default defineNuxtConfig({
 
   css: ["quasar/dist/quasar.prod.css"],
 
-  publicRuntimeConfig: {
-    SUPABASE_URL: process.env.SUPABASE_URL,
-    SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
-  },
+  modules: ["@nuxtjs/supabase"],
 });
