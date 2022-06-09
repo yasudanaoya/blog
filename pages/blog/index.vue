@@ -2,33 +2,26 @@
 q-page(padding)
   div.q-pa-md.row.items-start.q-gutter-md
     q-card.card.cursor-pointer(
-      v-for="content of contents"
-      :key="content.id"
+      v-for="d in data"
+      :key="d._id"
     )
-      nuxt-link(:to="`/blog/${content.slug}`")
-        q-img(:src="content.thumbnail")
-          div.absolute-bottom.text-subtitle2.text-center
-            | {{ content.title }}
+      //- nuxt-link(:to="`/blog/${d.id}`")
+      q-img(:src="d.src")
+        div.absolute-bottom.text-subtitle2.text-center
+          | {{ d.title }}
 
 </template>
 
 <script setup lang="ts">
-type Content = {
-  id: string;
-  title: string;
-  slug: string;
-  thumbnail: string;
-  tag: string[]; // TODO: show tags
-  created_at: string;
-};
-
-const client = useSupabaseClient()
-
-const { data: contents } = await useAsyncData('contents', async () => {
-  const { data } = await client.from<Content>('contents').select('*').order('created_at')
-
-  return data
-})
+const { data } = await useAsyncData('blog', () => queryContent('/blog').find().then(res => {
+  return res.map(r => {
+    const path = `../../assets/images/${r.image}`
+    return {
+      ...r,
+      src: new URL(path, import.meta.url).href
+    }
+  })
+}))
 </script>
 
 <style lang="scss" scoped>

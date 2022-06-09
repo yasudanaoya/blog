@@ -9,5 +9,5 @@ export default defineNuxtConfig({
 
   css: ["quasar/dist/quasar.prod.css"],
 
-  modules: ["@nuxtjs/supabase"],
+  modules: ["@nuxtjs/supabase", "@nuxt/content"],
 });
