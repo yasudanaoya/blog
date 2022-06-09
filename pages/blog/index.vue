@@ -5,9 +5,10 @@ q-page(padding)
       v-for="content of contents"
       :key="content.id"
     )
-      q-img(:src="content.thumbnail")
-        div.absolute-bottom.text-subtitle2.text-center
-          | {{ content.title }}
+      nuxt-link(:to="`/blog/${content.slug}`")
+        q-img(:src="content.thumbnail")
+          div.absolute-bottom.text-subtitle2.text-center
+            | {{ content.title }}
 
 </template>
 
@@ -15,10 +16,9 @@ q-page(padding)
 type Content = {
   id: string;
   title: string;
-  body: string;
-  slag: string;
+  slug: string;
   thumbnail: string;
-  tag: string[];
+  tag: string[]; // TODO: show tags
   created_at: string;
 };
 
