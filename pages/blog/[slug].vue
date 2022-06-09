@@ -1,10 +1,6 @@
 <template lang="pug">
 q-page(padding)
   h1.title {{ content.title }}
-  //- q-btn(
-  //-   @click="renderHtml"
-  //- )
-    | Read more
 
 </template>
 
@@ -28,14 +24,6 @@ const { data: content } = await useAsyncData('contents', async () => {
 
   return data
 })
-
-// let md = ref("");
-// let rendered = ref("");
-// const editing = ref(true);
-// const renderHtml = () => {
-//   editing.value = false;
-//   rendered.value = useNuxtApp().$mdit.render(md.value);
-// }
 
 console.log(content)
 </script>
