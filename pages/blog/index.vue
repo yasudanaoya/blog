@@ -6,22 +6,16 @@ q-page(padding)
       :key="d._id"
     )
       //- nuxt-link(:to="`/blog/${d.id}`")
-      q-img(:src="d.src")
+      //- q-img(:src="d.src")
+      //- q-img(src="https://gilberttanner.com/content/images/size/w1920/2020/10/post_page.png")
+      q-img(:src="d.image")
         div.absolute-bottom.text-subtitle2.text-center
           | {{ d.title }}
 
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData('blog', () => queryContent('/blog').find().then(res => {
-  return res.map(r => {
-    const path = `../../assets/images/${r.image}`
-    return {
-      ...r,
-      src: new URL(path, import.meta.url).href
-    }
-  })
-}))
+const { data } = await useAsyncData('blog', () => queryContent('/blog').find())
 </script>
 
 <style lang="scss" scoped>
