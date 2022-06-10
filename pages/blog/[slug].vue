@@ -21,6 +21,7 @@ useHead({
       content: data.value.description,
     },
     { hid: 'og:image', name: 'og:image', property: 'og:image', content: data.value.image },
+    { hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
 
