@@ -2,6 +2,7 @@
 title: My First blog Post
 description: This is my first blog post
 date: 2020-10-10
+slug: test
 image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/images/thumbnail/nuxt3.png
 tags:
   - test
