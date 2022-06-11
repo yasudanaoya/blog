@@ -2,7 +2,11 @@
 module.exports = {
   darkMode: "media",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        dotgothic: ['DotGothic16']
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
