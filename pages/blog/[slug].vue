@@ -1,7 +1,5 @@
 <template lang="pug">
-q-page(padding)
-  content-doc
-
+content-doc
 </template>
 
 <script setup lang="ts">

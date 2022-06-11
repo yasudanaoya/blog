@@ -1,14 +1,13 @@
 <template lang="pug">
-q-page(padding)
-  div.q-pa-md.row.items-start.q-gutter-md
-    q-card.card.cursor-pointer(
-      v-for="d in data"
-      :key="d.slug"
-    )
-      nuxt-link(:to="`/blog/${d.slug}`")
-        q-img(:src="d.image")
-          div.absolute-bottom.text-subtitle2.text-center
-            | {{ d.title }}
+div
+  .card.cursor-pointer(
+    v-for="d in data"
+    :key="d.slug"
+  )
+    nuxt-link(:to="`/blog/${d.slug}`")
+      img(:src="d.image")
+      div
+        | {{ d.title }}
 
 </template>
 
