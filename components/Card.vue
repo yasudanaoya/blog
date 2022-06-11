@@ -6,7 +6,7 @@ nuxt-link(
   figure
     img(:src="props.src")
   .card-body
-    h2.card-title
+    h2.card-title.font-notosanjp
       | {{ props.title }}
     .card-actions.justify-end
       .badge.badge-outline(

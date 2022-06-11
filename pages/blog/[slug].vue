@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.m-10
   content-doc(
     class="prose lg:prose-xl font-notosanjp"
   )

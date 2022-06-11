@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.m-10
   card(
     v-for="d in data"
     :to="`/blog/${d.slug}`"
