@@ -4,5 +4,24 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
   target: "static",
 
+  css: ["@/assets/styles/tailwind.css"],
+
   modules: ["@nuxt/content"],
+
+  buildModules: ["@nuxtjs/tailwindcss"],
+
+  tailwindcss: {
+    content: [
+      "./components/**/*.{js,vue,ts}",
+      "./layouts/**/*.vue",
+      "./pages/**/*.vue",
+      "./plugins/**/*.{js,ts}",
+      "./nuxt.config.{js,ts}",
+    ],
+    darkMode: "media",
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  },
 });
