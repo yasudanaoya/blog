@@ -1,7 +1,7 @@
 <template lang="pug">
-main
+div
   content-doc(
-    class="prose lg:prose-xl font-dotgothic"
+    class="prose lg:prose-xl font-notosanjp"
   )
 </template>
 

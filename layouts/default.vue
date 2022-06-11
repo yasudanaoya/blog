@@ -1,5 +1,6 @@
 <template lang="pug">
 div
   navbar
-  slot
+  .m-10
+    slot
 </template>

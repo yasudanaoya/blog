@@ -1,5 +1,5 @@
 <template lang="pug">
-.navbar.sticky
+.navbar.sticky.top-0.backdrop-blur
   .navbar-start
   .navbar-center
     a.btn.btn-ghost.normal-case.text-xl.font-dotgothic
