@@ -7545,6 +7545,7 @@ __metadata:
     pug: ^3.0.2
     quasar: ^2.7.1
     sass: 1.32.13
+    vue-gtag: ^2.0.1
   languageName: unknown
   linkType: soft
 
@@ -8796,6 +8797,15 @@ __metadata:
   dependencies:
     bundle-runner: ^0.0.1
   checksum: f1cc37913369786e60db6cffcda3f016cb073301db765128cddebdcf8367b50a7525e47b60924788def443f3183b92bcfc72ad248ce28d3fed19ef092ae8b662
+  languageName: node
+  linkType: hard
+
+"vue-gtag@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "vue-gtag@npm:2.0.1"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 949260ae4fbe6db62759d4050fa80c061e39025f7a9f50a97c662cac8d7d8ebf5d60228a7f9aa75d7ea910fb977852e954099a276f432c8cd13a063c40ba4ccd
   languageName: node
   linkType: hard
 
