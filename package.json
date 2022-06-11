@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.0.1",
-    "@nuxtjs/supabase": "^0.1.16",
     "@quasar/vite-plugin": "^1.0.10",
     "nuxt": "3.0.0-rc.3",
     "nuxt-vite": "^0.3.5",
@@ -18,7 +17,6 @@
   "packageManager": "yarn@3.2.1",
   "dependencies": {
     "@quasar/extras": "^1.14.0",
-    "@supabase/supabase-js": "^1.35.3",
     "quasar": "^2.7.1"
   }
 }
