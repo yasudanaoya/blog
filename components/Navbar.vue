@@ -4,7 +4,8 @@
   .navbar-center
     a.btn.btn-ghost.normal-case.text-xl.font-dotgothic
       | BLOG desu
-  .navbar-end
+  //- TODO: 検索
+  //- .navbar-end
     button.btn.btn-ghost.btn-circle
       svg(
         xmlns="http://www.w3.org/2000/svg"
