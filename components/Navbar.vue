@@ -3,21 +3,36 @@
   .navbar-start
   .navbar-center
     a.btn.btn-ghost.normal-case.text-xl.font-dotgothic
-      | BLOG desu
-  //- TODO: 検索
-  //- .navbar-end
-    button.btn.btn-ghost.btn-circle
-      svg(
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
+      | waino BLOG desu
+
+  .navbar-end
+    .tabs
+      nuxt-link.tab(
+        v-for="tab in tabs"
+        :to="tab.path"
+        :class="{ 'tab-active': isActive(tab.path) }"
       )
-        path(
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        )
+        | {{ tab.name }}
 </template>
+
+<script setup lang="ts">
+const tabs = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'Blog',
+    path: '/blog',
+  },
+]
+
+const route = useRoute()
+
+const isActive = (path: string) => {
+  if (path === '/') {
+    return route.path === '/'
+  }
+  return route.path.match(new RegExp(path))
+}
+</script>

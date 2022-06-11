@@ -1,7 +1,8 @@
 <template lang="pug">
-div
-  h1.pt-12.text-3xl.text-red-600.underline
-    | hoge
-  button.btn
-    | Hello daisyUI
+div(class="flex flex-col justify-center items-center py-20")
+  div(class="mockup-code w-4/6")
+    pre(data-prefix="$")
+      code whoami
+    pre.text-success(data-prefix=">")
+      code yasudanaoya
 </template>
