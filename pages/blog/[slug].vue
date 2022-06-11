@@ -11,8 +11,6 @@ const { data } = await useAsyncData('blog', () => {
   return queryContent('blog').where({ slug: slug }).findOne()
 })
 
-console.log(data.value)
-
 useHead({
   title: data.value.title,
   meta: [
