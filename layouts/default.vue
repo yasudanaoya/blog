@@ -1,26 +1,26 @@
 <template lang="pug">
-div
-  q-header(elevated)
+q-layout
+  q-header(reveal elevated)
     q-toolbar
-      q-avatar
-        img(src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg")
-      q-toolbar-title
-        | Quasar Framework
-
       q-tabs
         q-route-tab(name="home" icon="home" label="Home" to="/")
         q-route-tab(name="about" icon="face" label="About" to="/about")
         q-route-tab(name="blog" icon="newspaper" label="Blog" to="/blog")
 
-      q-toggle(
-        v-model="darkMode"
-        size="xl"
-        checked-icon="dark_mode"
-        unchecked-icon="light_mode"
-        @click="changeMode"
-      )
-  slot
-  q-footer(elevated)
+      q-toolbar-title.absolute-center
+        | My Blog
+
+      div.fixed-right
+        q-toggle(
+          v-model="darkMode"
+          size="xl"
+          checked-icon="dark_mode"
+          unchecked-icon="light_mode"
+          @click="changeMode"
+        )
+  q-page-container
+    slot
+  q-footer(reveal elevated)
     q-toolbar
       q-toolbar-title
         | Footer
@@ -36,10 +36,3 @@ const changeMode = async (): Promise<void> => {
   q.dark.set(darkMode.value);
 };
 </script>
-
-<style lang="scss" scoped>
-i.q-icon.notranslate.material-icons.q-tabs__arrow.q-tabs__arrow--right.absolute.q-tab__icon {
-  // NOTE: this is a workaround for the issue with the q-tabs component
-  display: none;
-}
-</style>
