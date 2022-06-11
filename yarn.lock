@@ -760,6 +760,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxtjs/google-analytics@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@nuxtjs/google-analytics@npm:2.4.0"
+  dependencies:
+    vue-analytics: ^5.22.1
+  checksum: a6196032093fd3306ee8c50b3bb32d860670b3e82b7947b4e410195830a1f5c6f107f90fb3c210d9250ffe1ad465ac397e441c3f9211a48df0267a7898f742b3
+  languageName: node
+  linkType: hard
+
 "@quasar/extras@npm:^1.14.0":
   version: 1.14.0
   resolution: "@quasar/extras@npm:1.14.0"
@@ -7528,6 +7537,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@nuxt/content": ^2.0.1
+    "@nuxtjs/google-analytics": ^2.4.0
     "@quasar/extras": ^1.14.0
     "@quasar/vite-plugin": ^1.0.10
     nuxt: 3.0.0-rc.3
@@ -8770,6 +8780,13 @@ __metadata:
   version: 3.0.3
   resolution: "vscode-uri@npm:3.0.3"
   checksum: 683bf9de835c3cef0b51c104a4949bf746148ded7c2287ebafcc506d20aa0e90b99385a972dba8132903420dba67fc33a5e146e30212c4a6b3ca5d74d1f95702
+  languageName: node
+  linkType: hard
+
+"vue-analytics@npm:^5.22.1":
+  version: 5.22.1
+  resolution: "vue-analytics@npm:5.22.1"
+  checksum: 2948a92428425f0c0f6e4b80a8b5679d152d3f76d35c26df482c903ae6798d6bb1ed110811c58a3123f53c26ff6696c61526f6d37b3cf4299bc83dd9af93a215
   languageName: node
   linkType: hard
 

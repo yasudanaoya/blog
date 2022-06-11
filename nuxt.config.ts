@@ -5,9 +5,13 @@ export default defineNuxtConfig({
   ssr: false,
   target: "static",
 
-  buildModules: ["nuxt-vite"],
+  buildModules: ["nuxt-vite", "@nuxtjs/google-analytics"],
 
   css: ["quasar/dist/quasar.prod.css"],
 
   modules: ["@nuxt/content"],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
+  },
 });
