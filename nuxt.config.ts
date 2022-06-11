@@ -6,22 +6,5 @@ export default defineNuxtConfig({
 
   css: ["@/assets/styles/tailwind.css"],
 
-  modules: ["@nuxt/content"],
-
-  buildModules: ["@nuxtjs/tailwindcss"],
-
-  tailwindcss: {
-    content: [
-      "./components/**/*.{js,vue,ts}",
-      "./layouts/**/*.vue",
-      "./pages/**/*.vue",
-      "./plugins/**/*.{js,ts}",
-      "./nuxt.config.{js,ts}",
-    ],
-    darkMode: "media",
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  },
+  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
 });
