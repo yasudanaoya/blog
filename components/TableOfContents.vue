@@ -2,15 +2,18 @@
 nav.sticky.top-48.self-start.mr-4
   ul.text-sm
     li(v-for="item in toc")
-      a.anchor-link(
+      a(
         :href="`#${item.id}`"
+        class="hover:text-sky-300"
         v-smooth-scroll
-      )
-        | {{ item.text }}
+      ) {{ item.text }}
       ul(v-if='item.children')
         li.pl-3(v-for="child in item.children")
-          a.anchor-link(:href="`#${child.id}`" v-smooth-scroll)
-            | {{ nestLinkText(item.text, child.text) }}
+          a(
+            :href="`#${child.id}`"
+            class="hover:text-sky-300"
+            v-smooth-scroll
+          ) {{ nestLinkText(item.text, child.text) }}
 
 </template>
 
@@ -43,7 +46,7 @@ const toc = props.toc.map(item => {
   }
 })
 
-const nestLinkText = (parent: string, child: string): string => {
+const nestLinkText = (parent: String, child: String): string => {
   var re = new RegExp(`${parent} > `, 'g');
   return child.replace(re, '')
 }
