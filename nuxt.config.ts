@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
-  modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
 
   generate: {
     fallback: "404.html",
