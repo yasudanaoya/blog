@@ -28,6 +28,10 @@ const tabs = [
     name: 'Blog',
     path: '/blog',
   },
+  {
+    name: 'Photo',
+    path: '/photo',
+  },
 ]
 
 const route = useRoute()
