@@ -15,4 +15,10 @@ div(class="container mx-auto px-4 py-5")
 
 <script setup lang="ts">
 const { data } = await useAsyncData('blog', () => queryContent('/blog').find())
+
+onMounted(() => {
+  if (!data.value.length) {
+    location.reload()
+  }
+})
 </script>
