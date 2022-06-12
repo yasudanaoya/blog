@@ -1,16 +1,21 @@
 <template lang="pug">
 div(class="lg:grid lg:grid-cols-[1fr_auto]")
-  ContentRenderer(
-    :value="data"
+  content-doc(
     class="m-10 prose lg:prose-xl font-notosanjp"
   )
-  table-of-contents(
-    :toc="data.body.toc.links"
-  )
+  div(class="sticky top-48 self-start mr-4 hidden lg:block")
+    template(v-if="data.body")
+      table-of-contents(
+        :toc="toc"
+      )
+    template(v-else)
+      div.w-60.flex.justify-center
+        div.animate-spin.h-10.w-10.border-4.border-blue-500.rounded-full.border-t-transparent
 </template>
 
 <script setup lang="ts">
 const { path } = useRoute()
+
 const { data } = await useAsyncData('blog', () => {
   const slug = path.split('/').pop()
   return queryContent('blog').where({ slug: slug }).findOne()
@@ -30,4 +35,14 @@ useHead({
     { hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
+
+const toc = ref([])
+onMounted(() => {
+  if (data.value.body) {
+    toc.value = data.value.body.toc.links
+  } else {
+    location.reload()
+  }
+})
+
 </script>
