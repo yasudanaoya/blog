@@ -1,5 +1,5 @@
 <template lang="pug">
-.navbar.sticky.top-0.backdrop-blur
+nav.navbar.sticky.top-0.backdrop-blur
   .navbar-start
   .navbar-center
     nuxt-link(
