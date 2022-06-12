@@ -1,16 +1,22 @@
 <template lang="pug">
 div(
-  class="sticky top-48 self-start mr-4 hidden lg:block"
+  class=" sticky top-48 self-start mr-4 hidden lg:block"
 )
   ul.text-sm
-    li(v-for="item in toc")
+    li(
+      v-for="item in toc"
+      class="pl-3 my-1 truncate w-64"
+    )
       a(
         :href="`#${item.id}`"
-        class="hover:text-sky-300"
+        class="w-2 truncate hover:text-sky-300"
         v-smooth-scroll
       ) {{ item.text }}
       ul(v-if='item.children')
-        li.pl-3(v-for="child in item.children")
+        li(
+          v-for="child in item.children"
+          class="pl-3 my-1 truncate w-60"
+        )
           a(
             :href="`#${child.id}`"
             class="hover:text-sky-300"
