@@ -1,15 +1,13 @@
 ---
-title: My First blog Post
-description: This is my first blog post
-date: 2020-10-10
+title: 知り合いに教えたら、知られてなかった便利なショートカット
+description: VSCode で書いてて、使ってて便利だけどあんまり知られてなかったなって感じたショートカットをいくつか紹介
+date: 2021-12-07
 slug: test2
-image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/thumbnail/nuxt3.png
+image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/thumbnail/VSCode.png
 tags:
-  - test
-  - Qiita
+  - VSCode
 ---
-# Hello Content v2!
-  Content V2 is a Git-based CMS
+# 知り合いに教えたら、知られてなかった便利なショートカット
 
 ## 注意書き
 
