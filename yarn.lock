@@ -7613,6 +7613,7 @@ __metadata:
     nuxt: 3.0.0-rc.3
     pug: ^3.0.2
     sass: 1.32.13
+    vue3-smooth-scroll: ^0.8.1
   languageName: unknown
   linkType: soft
 
@@ -8956,6 +8957,13 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: 4b8e417c96404d4f4c69539112dfafc52f3b2427db3663d5129413a9b65aafdb95889d756af4c6d08a84d7f9e80cc0ae4667383f2c090f27c27ea4b5d83c4cec
+  languageName: node
+  linkType: hard
+
+"vue3-smooth-scroll@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "vue3-smooth-scroll@npm:0.8.1"
+  checksum: e38fd398ad9713d58377bd4e1400f7b2e0cc183ff7d15a483b1aab3e00dbcc6d0eb70f625418ec903eb26b24a56f6c96a50b9952663d301dc622cb133d3bbdc2
   languageName: node
   linkType: hard
 

@@ -1,7 +1,11 @@
 <template lang="pug">
-div.m-10
-  content-doc(
-    class="prose lg:prose-xl font-notosanjp"
+div(class="grid grid-cols-[1fr_auto]")
+  ContentRenderer(
+    :value="data"
+    class="m-10 prose lg:prose-xl font-notosanjp"
+  )
+  table-of-contents(
+    :toc="data.body.toc.links"
   )
 </template>
 
@@ -26,5 +30,4 @@ useHead({
     { hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
-
 </script>
