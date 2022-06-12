@@ -4,13 +4,13 @@ div(class="lg:grid lg:grid-cols-[1fr_auto]")
     content-doc(
       class="m-10 prose lg:prose-xl font-notosanjp"
     )
-  div(class="sticky top-48 self-start mr-4 hidden lg:block")
+  div(class="w-60 sticky top-48 self-start mr-12 hidden lg:block")
     template(v-if="data.body")
       table-of-contents(
         :toc="toc"
       )
     template(v-else)
-      div.w-60.flex.justify-center
+      div.flex.justify-center
         div.animate-spin.h-10.w-10.border-4.border-blue-500.rounded-full.border-t-transparent
 </template>
 
