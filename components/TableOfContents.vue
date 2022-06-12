@@ -6,11 +6,11 @@ nav.sticky.top-48.self-start.mr-4
         :href="`#${item.id}`"
         v-smooth-scroll
       )
-        | {{ item.id }}
+        | {{ item.text }}
       ul(v-if='item.children')
         li.pl-3(v-for="child in item.children")
           a.anchor-link(:href="`#${child.id}`" v-smooth-scroll)
-            | {{ child.id }}
+            | {{ nestLinkText(item.text, child.text) }}
 
 </template>
 
@@ -42,4 +42,9 @@ const toc = props.toc.map(item => {
     text: `${item.text}`
   }
 })
+
+const nestLinkText = (parent: string, child: string): string => {
+  var re = new RegExp(`${parent} > `, 'g');
+  return child.replace(re, '')
+}
 </script>
