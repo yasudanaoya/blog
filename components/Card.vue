@@ -3,11 +3,11 @@ nuxt-link(
   class="rounded-lg overflow-hidden shadow-lg"
   :to="props.to"
 )
-  img.w-full(:src="props.src")
+  img.max-h-52.w-full(:src="props.src")
   .px-6.py-4
-    .text-gray-100.font-bold.text-xl.mb-2
+    .text-gray-100.font-bold.text-xl.mb-2.line-clamp-2
       | {{ props.title }}
-    .text-gray-400.text-base
+    .text-gray-400.text-base.line-clamp-3
       | {{ props.desc }}
   .px-6.py-4
     span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700.mr-2.mb-2(

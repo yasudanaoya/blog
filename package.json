@@ -13,6 +13,7 @@
     "@fortawesome/vue-fontawesome": "prerelease",
     "@nuxt/content": "^2.0.1",
     "@nuxtjs/tailwindcss": "^5.1.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.15.3",
     "nuxt": "3.0.0-rc.3",
