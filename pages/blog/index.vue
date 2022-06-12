@@ -1,13 +1,14 @@
 <template lang="pug">
-div.m-10
-  card(
-    v-for="d in data"
-    :to="`/blog/${d.slug}`"
-    :key="d.slug"
-    :src="d.image"
-    :title="d.title"
-    :tags="d.tags"
-  )
+div(class="container my-12 mx-auto px-4 md:px-12")
+  div(class="flex flex-wrap -mx-1 lg:-mx-4")
+    card(
+      v-for="d in data"
+      :to="`/blog/${d.slug}`"
+      :key="d.slug"
+      :src="d.image"
+      :title="d.title"
+      :tags="d.tags"
+    )
 
 </template>
 

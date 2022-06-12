@@ -1,10 +1,9 @@
 <template lang="pug">
 nuxt-link(
-  class="card w-96 shadow-xl border bg-base-300 box-border transition ease-in-out hover:border-2 duration-300"
-    :to="props.to"
-  )
-  figure
-    img(:src="props.src")
+  class="card my-1 w-full md:w-1/2 lg:my-4 lg:w-1/3 bg-base-300 border shadow-xl"
+  :to="props.to"
+)
+  img(:src="props.src")
   .card-body
     h2.card-title.font-notosanjp
       | {{ props.title }}
