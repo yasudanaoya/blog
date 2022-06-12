@@ -4,7 +4,7 @@ div(
 )
   ul.text-sm
     li(
-      v-for="item in toc"
+      v-for="item in props.toc"
       class="pl-3 my-1 truncate w-64"
     )
       a(
@@ -21,7 +21,7 @@ div(
             :href="`#${child.id}`"
             class="hover:text-sky-300"
             v-smooth-scroll
-          ) {{ nestLinkText(item.text, child.text) }}
+          ) {{ child.text }}
 
 </template>
 
@@ -35,27 +35,4 @@ type ToC = {
 const props = defineProps({
   toc: Array<ToC>,
 })
-
-const toc = props.toc.map(item => {
-  if (item.children) {
-    return {
-      ...item,
-      children: item.children.map(child => {
-        return {
-          ...child,
-          text: `${item.text} > ${child.text}`
-        }
-      })
-    }
-  }
-  return {
-    ...item,
-    text: `${item.text}`
-  }
-})
-
-const nestLinkText = (parent: String, child: String): string => {
-  var re = new RegExp(`${parent} > `, 'g');
-  return child.replace(re, '')
-}
 </script>
