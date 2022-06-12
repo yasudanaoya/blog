@@ -1,12 +1,13 @@
 <template lang="pug">
-div(class="container my-12 mx-auto px-4 md:px-12")
-  div(class="flex flex-wrap -mx-1 lg:-mx-4")
+div(class="container mx-auto px-4 py-5")
+  div(class="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4")
     card(
       v-for="d in data"
       :to="`/blog/${d.slug}`"
       :key="d.slug"
       :src="d.image"
       :title="d.title"
+      :desc="d.description"
       :tags="d.tags"
     )
 

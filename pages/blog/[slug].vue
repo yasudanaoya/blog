@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="grid grid-cols-[1fr_auto]")
+div(class="lg:grid lg:grid-cols-[1fr_auto]")
   ContentRenderer(
     :value="data"
     class="m-10 prose lg:prose-xl font-notosanjp"

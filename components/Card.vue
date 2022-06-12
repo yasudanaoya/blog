@@ -1,17 +1,18 @@
 <template lang="pug">
 nuxt-link(
-  class="card my-1 w-full md:w-1/2 lg:my-4 lg:w-1/3 bg-base-300 border shadow-xl"
+  class="rounded-lg overflow-hidden shadow-lg"
   :to="props.to"
 )
-  img(:src="props.src")
-  .card-body
-    h2.card-title.font-notosanjp
+  img.w-full(:src="props.src")
+  .px-6.py-4
+    .text-gray-100.font-bold.text-xl.mb-2
       | {{ props.title }}
-    .card-actions.justify-end
-      .badge.badge-outline(
-        v-for="tag in props.tags"
-      )
-        | {{ tag }}
+    .text-gray-400.text-base
+      | {{ props.desc }}
+  .px-6.py-4
+    span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700.mr-2.mb-2(
+      v-for="tag in props.tags"
+    ) {{ `#${tag}` }}
 
 </template>
 
@@ -19,6 +20,7 @@ nuxt-link(
 const props = defineProps({
   src: String,
   title: String,
+  desc: String,
   tags: Array<String>,
   to: String,
 })

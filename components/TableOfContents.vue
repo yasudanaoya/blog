@@ -1,5 +1,7 @@
 <template lang="pug">
-nav.sticky.top-48.self-start.mr-4
+div(
+  class="sticky top-48 self-start mr-4 hidden lg:block"
+)
   ul.text-sm
     li(v-for="item in toc")
       a(
