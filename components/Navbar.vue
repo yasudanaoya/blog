@@ -2,7 +2,10 @@
 .navbar.sticky.top-0.backdrop-blur
   .navbar-start
   .navbar-center
-    a.btn.btn-ghost.normal-case.text-xl.font-dotgothic
+    nuxt-link(
+      to="/"
+      class="text-xl font-dotgothic hover:text-sky-300"
+    )
       | waino BLOG desu
 
   .navbar-end
