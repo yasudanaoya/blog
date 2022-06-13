@@ -13,25 +13,33 @@ nav
             ) waino BLOG desu
 
     .navbar-end
-      div(class="block md:hidden dropdown dropdown-end")
-        label(
-          class="btn btn-ghost rounded-btn hover:text-sky-300"
-          tabindex="0"
-        )
-          font-awesome-icon(icon="bars")
-        ul(
-          tabindex="0"
-          class="dropdown-content menu p-2 shadow bg-base-300 rounded-box"
-        )
-          li
-            nuxt-link(
-              v-for="tab in tabs"
-              :key="tab.path"
-              :to="tab.path"
-              :class="{ 'text-sky-300': isActive(tab.path) }"
-              class="my-1 text-sm font-medium transition-colors duration-200 transform hover:text-sky-300 md:mx-4 md:my-0"
+      div(class="block md:hidden")
+        Menu
+          div
+            menu-button(class="btn btn-ghost rounded-btn hover:text-sky-300")
+              font-awesome-icon(icon="bars")
+          transition(
+            enter-active-class="transition duration-100 ease-out"
+              enter-from-class="transform scale-95 opacity-0"
+              enter-to-class="transform scale-100 opacity-100"
+            leave-active-class="transition duration-75 ease-in"
+              leave-from-class="transform scale-100 opacity-100"
+              leave-to-class="transform scale-95 opacity-0"
+          )
+            menu-items(
+              class="absolute right-0 p-2 shadow bg-base-300 rounded-box ring-opacity-5 focus:outline-none"
             )
-              | {{ tab.name }}
+              .px-1.py-1
+                menu-item(
+                  v-for="tab in tabs"
+                  :key="tab.path"
+                  v-slot="{ active }"
+                )
+                  nuxt-link(
+                    :class="{ 'text-sky-300': active }"
+                    class="my-1 text-sm font-medium group flex w-full px-2 transition-colors duration-200 transform md:mx-4 md:my-0"
+                    :to="tab.path"
+                  ) {{ tab.name }}
 
       div(class="tabs hidden md:block")
         nuxt-link(
@@ -44,6 +52,7 @@ nav
 </template>
 
 <script setup lang="ts">
+import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 const tabs = [
   {
     name: 'Home',
