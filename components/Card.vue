@@ -3,7 +3,8 @@ nuxt-link(
   class="rounded-lg overflow-hidden shadow-lg"
   :to="props.to"
 )
-  img.max-h-52.w-full(:src="props.src")
+  div.flex.justify-center.overflow-hidden
+    img.max-h-52.max-w-full.object-center.rounded-lg(:src="props.src")
   .px-6.py-4
     .text-gray-100.font-bold.text-xl.mb-2.line-clamp-2
       | {{ props.title }}
