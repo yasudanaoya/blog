@@ -1,16 +1,16 @@
 <template lang="pug">
 footer.footer.footer-center.p-6.bg-base-200.text-base-content.rounded.bottom-0
-  div
-    .grid.grid-flow-col.gap-6.h-16.content-center
-      a.mx-2(
-        v-for="link in links"
-        :href="link.href"
-        target="_blank"
+  div(class="grid grid-flow-col gap-6 lg:h-16 content-center")
+    a(
+      class="lg:mx-2"
+      v-for="link in links"
+      :href="link.href"
+      target="_blank"
+    )
+      font-awesome-icon(
+        :icon="link.icon"
+        class="text-lg lg:text-4xl transition duration-200 ease-in-out hover:scale-110"
       )
-        font-awesome-icon(
-          :icon="link.icon"
-          class="text-4xl transition duration-200 ease-in-out hover:scale-110"
-        )
 </template>
 
 <script setup lang="ts">
