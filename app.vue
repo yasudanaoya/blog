@@ -37,7 +37,10 @@ useHead({
       property: "og:image",
       content: image,
     },
-    { name: "twitter:card", content: "summary" },
+    { hid: 'twitter:title', name: 'twitter:title', property: 'twitter:title', content: title },
+    { hid: 'twitter:description	', name: 'twitter:description	', property: 'twitter:description', content: description },
+    { hid: 'twitter:image', name: 'twitter:image', property: 'twitter:image', content: image },
+    { hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ],
 })
 </script>
