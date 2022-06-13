@@ -7,7 +7,7 @@ nuxt-layout
 const baseUrl = "yasudanaoya.com";
 const title = "yasudanaoya's Site";
 const description = "ブログを投稿したり、写真を投稿したりします。";
-const image = "https://avatars.githubusercontent.com/u/43776161?v=4"
+const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
 
 useHead({
   title: title,
