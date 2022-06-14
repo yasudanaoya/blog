@@ -20,8 +20,8 @@ nav.w-full.navbar.sticky.top-0.backdrop-blur
           v-for="tab in props.tabs"
           :key="tab.path"
           :to="tab.path"
-          :class="{ 'tab-active': isActive(tab.path) }"
-          class="tab"
+          class="tab hover:text-sky-300"
+          :class="{ 'tab-active hover:text-inherit': isActive(tab.path) }"
         ) {{ tab.name }}
 </template>
 
