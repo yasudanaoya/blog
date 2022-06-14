@@ -1,8 +1,8 @@
 <template lang="pug">
 .drawer.drawer-end
   input#nav-drawer.drawer-toggle(type='checkbox')
-  .drawer-content.flex.flex-col
-    .w-full.navbar.bg-base-300
+  .drawer-content.flex.flex-col.min-h-screen.h-full.justify-between
+    nav.w-full.navbar.sticky.top-0.backdrop-blur
       .navbar-start
 
       .navbar-center
