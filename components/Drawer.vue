@@ -7,7 +7,7 @@
 
   .drawer-side
     label.drawer-overlay(for='nav-drawer')
-    ul.menu.p-4.overflow-y-auto.w-80.bg-base-100
+    ul.menu.p-4.overflow-y-auto.bg-base-100.rounded-l-2xl
       li(
         v-for="tab in tabs"
         :key="tab.path"

@@ -6,7 +6,7 @@ nuxt-link(
   div.flex.justify-center.overflow-hidden
     img.max-h-52.max-w-full.object-center.rounded-lg(:src="props.src")
   .px-6.py-4
-    .text-gray-100.font-bold.text-xl.mb-2.line-clamp-2
+    .font-bold.text-xl.mb-2.line-clamp-2
       | {{ props.title }}
     .text-gray-400.text-base.line-clamp-3
       | {{ props.desc }}
