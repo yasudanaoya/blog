@@ -12,7 +12,7 @@ nav.w-full.navbar.sticky.top-0.backdrop-blur
 
   .navbar-end
     div(class="flex-none lg:hidden")
-      label.btn.btn-square.btn-ghost(for='nav-drawer' ref='btn')
+      label(class="btn btn-ghost rounded-btn hover:text-sky-300 hover:bg-inherit" for='nav-drawer' ref='btn')
         font-awesome-icon(icon="bars")
     div(class="flex-none hidden lg:block")
       div(class="tabs flex-none hidden lg:block")
