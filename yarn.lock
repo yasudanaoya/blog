@@ -7906,6 +7906,7 @@ __metadata:
     daisyui: ^2.15.3
     nuxt: 3.0.0-rc.3
     pug: ^3.0.2
+    rollup-plugin-visualizer: ^5.6.0
     sass: 1.32.13
     vue3-smooth-scroll: ^0.8.1
   languageName: unknown

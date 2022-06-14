@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from "nuxt";
+import visualizer from "rollup-plugin-visualizer";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -25,4 +26,8 @@ export default defineNuxtConfig({
   },
 
   supabase: {},
+
+  vite: {
+    plugins: [visualizer()],
+  },
 });
