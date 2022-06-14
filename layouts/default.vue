@@ -1,5 +1,5 @@
 <template lang="pug">
-navbar
+drawer
   slot
   app-footer
 </template>
