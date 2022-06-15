@@ -1,5 +1,5 @@
 <template lang="pug">
-footer.footer.footer-center.p-6.bg-base-200.text-base-content.rounded.bottom-0
+footer.footer.footer-center.p-6.bg-base-300.text-base-content.rounded.bottom-0
   div(class="grid grid-flow-col gap-6 lg:h-16 content-center")
     a(
       class="lg:mx-2"

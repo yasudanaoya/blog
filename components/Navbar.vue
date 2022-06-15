@@ -6,13 +6,13 @@ nav.w-full.navbar.sticky.top-0.backdrop-blur
     div(class="container py-4 md:flex md:justify-between md:items-center")
       div(class="flex items-center justify-between")
         nuxt-link(
-          class="text-xl font-dotgothic transition-colors duration-200 transform lg:text-3xl hover:text-sky-300"
+          class="text-xl font-dotgothic transition-colors duration-200 transform lg:text-3xl hover:text-rose-600  dark:hover:text-sky-300"
           to="/"
         ) waino BLOG desu
 
   .navbar-end
     div(class="flex-none lg:hidden")
-      label(class="btn btn-ghost rounded-btn hover:text-sky-300 hover:bg-inherit" for='nav-drawer' ref='btn')
+      label(class="btn btn-ghost rounded-btn hover:text-rose-600  dark:hover:text-sky-300 hover:bg-inherit" for='nav-drawer' ref='btn')
         font-awesome-icon(icon="bars")
     div(class="flex-none hidden lg:block")
       div(class="tabs flex-none hidden lg:block")
@@ -20,7 +20,7 @@ nav.w-full.navbar.sticky.top-0.backdrop-blur
           v-for="tab in props.tabs"
           :key="tab.path"
           :to="tab.path"
-          class="tab hover:text-sky-300"
+          class="tab hover:text-rose-600  dark:hover:text-sky-300"
           :class="{ 'tab-active hover:text-inherit': isActive(tab.path) }"
         ) {{ tab.name }}
 </template>

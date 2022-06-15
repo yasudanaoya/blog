@@ -6,7 +6,7 @@ ul.text-sm
   )
     a(
       :href="`#${item.id}`"
-      class="w-2 truncate hover:text-sky-300"
+      class="w-2 truncate hover:text-rose-600  dark:hover:text-sky-300"
       v-smooth-scroll
     ) {{ item.text }}
     ul(v-if='item.children')
@@ -16,7 +16,7 @@ ul.text-sm
       )
         a(
           :href="`#${child.id}`"
-          class="hover:text-sky-300"
+          class="hover:text-rose-600  dark:hover:text-sky-300"
           v-smooth-scroll
         ) {{ child.text }}
 

@@ -15,7 +15,7 @@
         nuxt-link(
           @click.native="click"
           :to="tab.path"
-          class="active:bg-inherit active:text-inherit hover:bg-inherit hover:text-sky-300"
+          class="active:bg-inherit active:text-inherit hover:bg-inherit hover:text-rose-600  dark:hover:text-sky-300"
         )
           | {{ tab.name }}
 

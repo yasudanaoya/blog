@@ -23,6 +23,4 @@ export default defineNuxtConfig({
     fallback: "404.html",
     routes: ["/"],
   },
-
-  supabase: {},
 });
