@@ -6,8 +6,8 @@ slug: made_blog
 image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/thumbnail/Blog.png
 tags:
   - Blog
-  - Nuxt3
   - Tailwind
+  - daisyUI
 ---
 
 # CSS を 1mm も頑張らないでブログを作った
