@@ -14,7 +14,7 @@ div(class="container mx-auto px-4 py-5")
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData('blog', () => queryContent('/blog').find())
+const { data } = await useAsyncData('blog', () => queryContent('/blog').sort({ date: -1 }).find())
 
 onMounted(() => {
   if (!data.value.length) {
