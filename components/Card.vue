@@ -11,7 +11,7 @@ nuxt-link(
     .text-base.line-clamp-3.px-2
       | {{ props.desc }}
   .px-6.py-4
-    span.inline-block.bg-gray-200.rounded-full.px-3.py-1.text-sm.font-semibold.text-gray-700.mr-2.mb-2(
+    span.badge.badge-outline.box-content.inline-block.rounded-full.font-semibold.mx-1.px-2.py-1(
       v-for="tag in props.tags"
     ) {{ `#${tag}` }}
 
