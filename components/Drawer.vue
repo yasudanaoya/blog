@@ -1,7 +1,7 @@
 <template lang="pug">
 .drawer.drawer-end
   input#nav-drawer.drawer-toggle(type='checkbox')
-  .drawer-content.flex.flex-col.min-h-screen.h-full.justify-between
+  .drawer-content.flex.flex-col.h-full.justify-between
     Navbar(:tabs="tabs" ref="navbar")
     slot
 
