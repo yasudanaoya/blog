@@ -3,7 +3,7 @@ footer.footer.footer-center.p-6.bg-base-300.text-base-content.rounded
   div(class="grid grid-flow-col gap-6 lg:h-16 content-center")
     a(
       class="lg:mx-2"
-      v-for="link in links"
+      v-for="link in props.links"
       :href="link.href"
       target="_blank"
     )
@@ -14,22 +14,13 @@ footer.footer.footer-center.p-6.bg-base-300.text-base-content.rounded
 </template>
 
 <script setup lang="ts">
-const links = [
-  {
-    icon: ['fab', 'twitter'],
-    href: 'https://twitter.com/708yasuda',
+const props = defineProps({
+  links: {
+    type: Array<{
+      href: string
+      icon: string | string[]
+    }>,
+    required: true,
   },
-  {
-    icon: ['fab', 'github'],
-    href: 'https://github.com/yasudanaoya'
-  },
-  {
-    icon: ['fab', 'facebook'],
-    href: 'https://www.facebook.com/naoya.yasuda.50'
-  },
-  {
-    icon: 'feed',
-    href: 'https://rss.app/feeds/IHpvnKKhP0zP0f4i.xml'
-  }
-]
+})
 </script>

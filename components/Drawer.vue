@@ -2,14 +2,14 @@
 .drawer.drawer-end
   input#nav-drawer.drawer-toggle(type='checkbox')
   .drawer-content.flex.flex-col.h-full.justify-between
-    Navbar(:tabs="tabs" ref="navbar")
+    Navbar(:tabs="props.tabs" ref="navbar")
     slot
 
   .drawer-side
     label.drawer-overlay(for='nav-drawer')
     ul.menu.p-4.overflow-y-auto.bg-base-100.rounded-l-2xl
       li(
-        v-for="tab in tabs"
+        v-for="tab in props.tabs"
         :key="tab.path"
       )
         nuxt-link(
@@ -22,21 +22,15 @@
 </template>
 
 <script setup lang="ts">
-const tabs = [
-  {
-    name: 'Home',
-    path: '/',
+const props = defineProps({
+  tabs: {
+    type: Array<{
+      name: string
+      path: string
+    }>,
+    required: true,
   },
-  {
-    name: 'Blog',
-    path: '/blog',
-  },
-  {
-    name: 'Photo',
-    path: '/photo',
-  },
-]
-
+})
 
 const navbar = ref(null)
 const click = () => {
