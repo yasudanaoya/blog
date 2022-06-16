@@ -7,7 +7,7 @@
 
   .drawer-side
     label.drawer-overlay(for='nav-drawer')
-    .menu.p-4.overflow-y-auto.bg-base-100.rounded-l-2xl.flex.flex-col.justify-between
+    .menu.p-4.overflow-y-auto.bg-base-100.rounded-l-2xl.flex.flex-col
       ul
         li(
           v-for="tab in props.tabs"
@@ -19,12 +19,13 @@
             class="active:bg-inherit active:text-inherit hover:bg-inherit hover:text-rose-600  dark:hover:text-sky-300"
           )
             | {{ tab.name }}
-      .grid.grid-cols-2.gap-2
+      .grid.grid-cols-2.gap-x-2.gap-y-4.mt-10
         a(
           class="lg:mx-2 text-center"
           v-for="link in props.links"
           :href="link.href"
           target="_blank"
+          @click="click"
         )
           font-awesome-icon(
             :icon="link.icon"

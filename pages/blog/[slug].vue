@@ -1,8 +1,8 @@
 <template lang="pug">
-div(class="lg:grid lg:grid-cols-[1fr_auto]")
+div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
   div.flex.justify-center
     content-doc(
-      class="m-10 prose lg:prose-xl font-notosanjp"
+      class="prose lg:prose-xl font-notosanjp"
     )
   div(class="w-60 sticky top-48 self-start mr-12 hidden lg:block")
     template(v-if="data.body")
