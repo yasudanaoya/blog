@@ -17,7 +17,18 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/supabase", "@nuxt/content"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/supabase",
+    "@nuxt/content",
+  ],
+
+  colorMode: {
+    preference: "dark", // default value of $colorMode.preference
+    fallback: "dark", // fallback value if not system preference found
+    classSuffix: "",
+  },
 
   generate: {
     fallback: "404.html",

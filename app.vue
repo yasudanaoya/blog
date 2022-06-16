@@ -4,18 +4,16 @@ nuxt-layout
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  colorMode: 'dark',
+})
+
 const baseUrl = "yasudanaoya.com";
 const title = "yasudanaoya's Site";
 const description = "ブログを投稿したり、写真を投稿したりします。";
 const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
 
 useHead({
-  htmlAttrs: {
-    class: 'html-class'
-  },
-  bodyAttrs: {
-    class: 'body-class'
-  },
   title: title,
   meta: [
     { charset: "utf-8" },
@@ -50,15 +48,3 @@ useHead({
   ],
 })
 </script>
-
-<style lang="scss">
-.body-class {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
-
-.html-class {
-  height: -webkit-fill-available;
-}
-</style>
