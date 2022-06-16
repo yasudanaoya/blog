@@ -1,5 +1,5 @@
 <template lang="pug">
-drawer(:tabs="tabs")
+drawer(:tabs="tabs" :links="links")
   slot
   app-footer(:links="links")
 </template>
