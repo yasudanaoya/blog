@@ -22,6 +22,8 @@ const { data } = await useAsyncData('blog', () => {
   return queryContent('blog').where({ slug: slug }).findOne()
 })
 
+const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
+
 useHead({
   title: data.value.title,
   meta: [
@@ -38,7 +40,7 @@ useHead({
     { hid: "og:image", property: "og:image", content: data.value.image },
     { hid: 'twitter:title', property: 'twitter:title', content: data.value.title },
     { hid: 'twitter:description	', property: 'twitter:description	', content: data.value.description },
-    { hid: 'twitter:image', property: 'twitter:image', content: data.value.image },
+    { hid: 'twitter:image', property: 'twitter:image', content: data.value.image || image },
     { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
