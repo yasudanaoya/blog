@@ -29,11 +29,17 @@ useHead({
       name: 'description',
       content: data.value.description,
     },
-    { hid: 'og:image', name: 'og:image', property: 'og:image', content: data.value.image },
-    { hid: 'twitter:title', name: 'twitter:title', property: 'twitter:title', content: data.value.title },
-    { hid: 'twitter:description	', name: 'twitter:description	', property: 'twitter:description	', content: data.value.description },
-    { hid: 'twitter:image', name: 'twitter:image', property: 'twitter:image', content: data.value.image },
-    { hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
+    { hid: "og:title", property: "og:title", content: data.value.title },
+    {
+      hid: "og:description",
+      property: "og:description",
+      content: data.value.description,
+    },
+    { hid: "og:image", property: "og:image", content: data.value.image },
+    { hid: 'twitter:title', property: 'twitter:title', content: data.value.title },
+    { hid: 'twitter:description	', property: 'twitter:description	', content: data.value.description },
+    { hid: 'twitter:image', property: 'twitter:image', content: data.value.image },
+    { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
 
