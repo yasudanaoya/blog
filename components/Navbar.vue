@@ -1,5 +1,5 @@
 <template lang="pug">
-nav.w-full.navbar.sticky.top-0.backdrop-blur
+nav.w-full.navbar.sticky.top-0.backdrop-blur.z-10
   .navbar-start
 
   .navbar-center
