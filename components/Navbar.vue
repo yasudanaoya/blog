@@ -1,5 +1,5 @@
 <template lang="pug">
-nav.w-full.navbar.sticky.top-0.backdrop-blur.z-10
+nav(class="w-full navbar sticky top-0 backdrop-blur z-10 h-10")
   .navbar-start
 
   .navbar-center
