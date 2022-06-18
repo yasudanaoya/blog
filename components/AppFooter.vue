@@ -1,15 +1,14 @@
 <template lang="pug">
-footer(class="footer footer-center p-6 bg-base-300 text-base-content rounded invisible md:visible")
-  div(class="grid grid-flow-col gap-6 lg:h-16 content-center")
+footer(class="footer footer-center p-4 bg-base-300 text-base-content rounded invisible md:visible")
+  div(class="grid grid-flow-col gap-6 lg:h-12 content-center")
     a(
-      class="lg:mx-2"
       v-for="link in props.links"
       :href="link.href"
       target="_blank"
     )
       font-awesome-icon(
         :icon="link.icon"
-        class="text-lg lg:text-4xl transition duration-200 ease-in-out hover:scale-110"
+        class="text-lg lg:text-3xl transition duration-200 ease-in-out hover:scale-110"
       )
 </template>
 
