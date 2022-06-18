@@ -16,31 +16,37 @@ div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
 
 <script setup lang="ts">
 const { path } = useRoute()
+const config = useRuntimeConfig()
 
 const { data } = await useAsyncData('blog', () => {
   const slug = path.split('/').pop()
   return queryContent('blog').where({ slug: slug }).findOne()
 })
 
-const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
+// const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
+// const img = `https:${data.value.image}`
+const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`
 
 useHead({
   title: data.value.title,
   meta: [
     {
+      hid: 'description',
       name: 'description',
       content: data.value.description,
     },
+    { hid: 'og:type', property: 'og:type', content: 'blog' },
     { hid: "og:title", property: "og:title", content: data.value.title },
     {
       hid: "og:description",
       property: "og:description",
       content: data.value.description,
     },
-    { hid: "og:image", property: "og:image", content: data.value.image },
+    { hid: 'og:url', property: 'og:url', content: `${config.public.BASE_URL}${path}` },
+    { hid: "og:image", property: "og:image", content: img },
     { hid: 'twitter:title', property: 'twitter:title', content: data.value.title },
     { hid: 'twitter:description	', property: 'twitter:description	', content: data.value.description },
-    { hid: 'twitter:image', property: 'twitter:image', content: data.value.image || image },
+    { hid: 'twitter:image', property: 'twitter:image', content: img },
     { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
