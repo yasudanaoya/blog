@@ -27,4 +27,10 @@ export default defineNuxtConfig({
     fallback: "404.html",
     routes: ["/"],
   },
+
+  nitro: {
+    prerender: {
+      routes: ["/sitemap.xml"],
+    },
+  },
 });
