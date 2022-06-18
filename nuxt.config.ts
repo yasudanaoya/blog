@@ -10,6 +10,10 @@ export default defineNuxtConfig({
   publicRuntimeConfig: {
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_KEY: process.env.SUPABASE_KEY,
+    BASE_URL:
+      process.env.NODE_ENV === "production"
+        ? "https://yasudanaoya.com/"
+        : "http://localhost:3000",
   },
 
   css: [

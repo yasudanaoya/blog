@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'PHOTO'
+  title: 'Photo'
 })
 
 // TODO: supabase storage から取得

@@ -15,7 +15,7 @@ div(class="container mx-auto px-4 py-5")
 
 <script setup lang="ts">
 useHead({
-  title: 'BLOG'
+  title: 'Blog'
 })
 
 const { data } = await useAsyncData('blog', () => queryContent('/blog').sort({ date: -1 }).find())
