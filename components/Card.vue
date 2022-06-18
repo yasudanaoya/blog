@@ -4,7 +4,9 @@ nuxt-link(
   :to="props.to"
 )
   div.flex.justify-center.overflow-hidden.pt-4
-    img.max-h-52.max-w-full.object-center.rounded-lg(:src="props.src")
+    img.max-h-52.max-w-full.object-center.rounded-lg(
+      :src="imgSrc"
+    )
   .px-6.py-4
     .font-bold.text-xl.mb-2.line-clamp-2
       | {{ props.title }}
@@ -25,4 +27,6 @@ const props = defineProps({
   tags: Array<String>,
   to: String,
 })
+
+const imgSrc = `/thumbnail/${props.src}`
 </script>

@@ -3,7 +3,7 @@ title: 知り合いに教えたら、知られてなかった便利なショー�
 description: VSCode で書いてて、使ってて便利だけどあんまり知られてなかったなって感じたショートカットをいくつか紹介
 date: 2021-12-07
 slug: vacode_shotcut
-image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/thumbnail/VSCode.png
+image: VSCode.png
 tags:
   - VSCode
 ---

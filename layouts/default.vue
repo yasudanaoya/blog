@@ -7,7 +7,7 @@ drawer(:tabs="tabs" :links="links")
 <script setup lang="ts">
 const tabs = [
   {
-    name: 'Home',
+    name: 'TOP',
     path: '/',
   },
   {

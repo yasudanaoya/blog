@@ -20,6 +20,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'PHOTO'
+})
 
 // TODO: supabase storage から取得
 const images = [

@@ -3,7 +3,7 @@ title: とある PR のおかげで Neovim がもはや VSCode な件につい�
 description: Neovim@8 で追加される laststatus=3 という設定を使って、status line を Global 表示させました。
 date: 2022-04-12
 slug: neovim_statuline
-image: https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/thumbnail/Neovim@8.png
+image: Neovim@8.png
 tags:
   - Neovim
 ---

@@ -16,7 +16,9 @@ useHead({
   bodyAttrs: {
     class: 'body-class'
   },
-  title: title,
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Site Title` : 'Site Title';
+  },
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
