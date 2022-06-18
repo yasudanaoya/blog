@@ -10,7 +10,7 @@ const generateOGP = async function () {
 
   blogs.forEach(async (blog) => {
     const { slug, title } = blog;
-    const splitted = mikan.split(article.title);
+    const splitted = mikan.split(title);
     const textSvg = textToSVG.getSVG(splitted, {
       x: 0,
       y: 0,

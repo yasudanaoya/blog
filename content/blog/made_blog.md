@@ -3,7 +3,6 @@ title: CSS を 1mm も頑張らないでブログを作った
 description: ずっと気になってた Tailwind を使って、CSS を一つも頑張らずにブログを作りました
 date: 2022-06-15
 slug: made_blog
-image: Blog.png
 tags:
   - Blog
   - Tailwind

@@ -4,6 +4,7 @@ div(class="container mx-auto px-4 py-5")
     card(
       v-for="d in data"
       :to="`/blog/${d.slug}`"
+      :slug="d.slug"
       :key="d.slug"
       :src="d.image"
       :title="d.title"

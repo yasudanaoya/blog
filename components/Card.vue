@@ -26,7 +26,8 @@ const props = defineProps({
   desc: String,
   tags: Array<String>,
   to: String,
+  slug: String,
 })
 
-const imgSrc = `/thumbnail/${props.src}`
+const imgSrc = props.src ? `/thumbnail/${props.src}` : `/ogp/${props.slug}.png`
 </script>
