@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   generate: {
     fallback: "404.html",
-    routes: ["/", "/error.html"],
+    routes: ["/", "/404.html"],
   },
 
   nitro: {
