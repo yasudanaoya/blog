@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="flex flex-col justify-center items-center content-center")
-  div(class="mockup-code w-4/6")
+  div(class="mockup-code w-1/2")
     pre(data-prefix="$")
       code get yasudanaoya
     pre.text-warning(data-prefix=">")
