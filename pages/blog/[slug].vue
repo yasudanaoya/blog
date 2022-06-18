@@ -25,7 +25,7 @@ const { data } = await useAsyncData('blog', () => {
 
 // const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
 // const img = `https:${data.value.image}`
-const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`
+const img = data.value.image ? `${config.public.BASE_URL}/thumbnail/${data.value.image}` : `${config.public.BASE_URL}/ogp/${data.value.slug}.png`
 
 useHead({
   title: data.value.title,
