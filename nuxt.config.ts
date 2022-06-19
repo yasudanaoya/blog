@@ -39,38 +39,32 @@ export default defineNuxtConfig({
     },
   },
 
-  feed() {
-    const baseLinkFeedBlogs = "/feed/blogs";
-    const feedFormats = {
-      rss: { type: "rss2", file: "rss.xml" },
-      atom: { type: "atom1", file: "atom.xml" },
-      json: { type: "json1", file: "feed.json" },
-    };
-    const { $content } = require("@nuxt/content");
-    const createFeedBlogs = async function (feed) {
-      feed.options = {
-        title: "My Blog",
-        description: "I write about technology",
-        link: baseUrl,
-      };
-      const blogs = await $content("blog").fetch();
-      blogs.forEach((blog) => {
-        const url = `${baseUrl}/${blog.slug}`;
-        feed.addItem({
-          title: blog.title,
-          id: url,
-          link: url,
-          date: blog.date,
-          description: blog.description,
-          content: blog.description,
-          author: "yasudanaoya",
+  feed: [
+    {
+      path: "/feed.xml",
+      async create(feed) {
+        const { $content } = require("@nuxt/content");
+        feed.options = {
+          title: "yasudanaoya's Site",
+          description:
+            "I write about technologyブログを投稿したり、写真を投稿したりします。",
+          link: baseUrl,
+        };
+        const blogs = await $content("blog").fetch();
+        blogs.forEach((blog) => {
+          const url = `${baseUrl}/${blog.slug}`;
+          feed.addItem({
+            title: blog.title,
+            id: url,
+            link: url,
+            date: blog.date,
+            description: blog.description,
+            content: blog.description,
+          });
         });
-      });
-    };
-    return Object.values(feedFormats).map(({ file, type }) => ({
-      path: `${baseLinkFeedBlogs}/${file}`,
-      type: type,
-      create: createFeedBlogs,
-    }));
-  },
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: "rss2",
+    },
+  ],
 });
