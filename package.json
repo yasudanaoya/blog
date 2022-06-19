@@ -13,7 +13,6 @@
     "@fortawesome/vue-fontawesome": "prerelease",
     "@netlify/plugin-sitemap": "^0.8.1",
     "@nuxt/content": "^2.0.1",
-    "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/supabase": "^0.1.16",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@tailwindcss/line-clamp": "^0.4.0",
