@@ -1,8 +1,28 @@
 <template lang="pug">
 div(class="flex flex-col justify-center items-center content-center p-10 z-0")
+  .avatar.py-6
+    .w-24.mask.mask-squircle
+      img(src="/icon/illust.jpeg")
   article(class="prose lg:prose-xl w-full flex flex-col items-center")
     span VSCode 生まれ Neovim 育ち
     span HHKB 使ってるやつは大体友達
+
+    .divider
+
+    h2 History
+
+    .relative.max-w-2xl
+      div(class="absolute top-0 h-5/6 border-r-2 left-3 border-gray-500 dark:border-gray-400 my-4")
+      template(v-for="history in histories")
+        .flex.items-center
+          span(class="w-6 h-6 rounded-full bg-gray-500 dark:bg-gray-400")
+          h5(class="ml-4 font-bold text-gray-600 dark:text-gray-300")
+            | {{ history.title }}
+            span(class="text-sm text-gray-500 dark:text-gray-400 ml-2")
+              | {{ history.term }}
+        .ml-12
+          p(class="text-sm whitespace-pre-wrap text-gray-500 dark:text-gray-400")
+            | {{ history.body }}
 
     .divider
 
@@ -55,6 +75,30 @@ div(class="flex flex-col justify-center items-center content-center p-10 z-0")
 </template>
 
 <script setup lang="ts">
+type History = {
+  title: string
+  term: string
+  body: string
+}
+
+const histories: History[] = [
+  {
+    title: 'セラク',
+    term: '2017/4~2018/9',
+    body: `Infrastructure`
+  },
+  {
+    title: 'シアトルコンサルティング',
+    term: '2018/10~2020/11',
+    body: `WEB Application`
+  },
+  {
+    title: 'WED',
+    term: '2018/10~2020/11',
+    body: `WEB Application`
+  },
+]
+
 type Item = {
   name: string
   value: string | string[]
