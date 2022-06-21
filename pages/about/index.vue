@@ -84,17 +84,17 @@ type History = {
 const histories: History[] = [
   {
     title: 'セラク',
-    term: '2017/4~2018/9',
+    term: '2017/4 ~ 2018/9',
     body: `Infrastructure`
   },
   {
     title: 'シアトルコンサルティング',
-    term: '2018/10~2020/11',
+    term: '2018/10 ~ 2020/11',
     body: `WEB Application`
   },
   {
     title: 'WED',
-    term: '2018/10~2020/11',
+    term: '2020/12 ~',
     body: `WEB Application`
   },
 ]
