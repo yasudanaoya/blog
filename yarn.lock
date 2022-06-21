@@ -7924,6 +7924,7 @@ __metadata:
     pug: ^3.0.2
     sass: 1.32.13
     sitemap: ^7.1.1
+    vue-gtag: ^2.0.1
     vue3-smooth-scroll: ^0.8.1
   languageName: unknown
   linkType: soft
@@ -9325,6 +9326,15 @@ __metadata:
   dependencies:
     bundle-runner: ^0.0.1
   checksum: 647ade1068533bd11c791608da9571f6125de9cd2c31cc26c6d7eb579b695558e7574979057d2a9ebbbcd600686516b6f9d222a99afc604936202d87bc4dbaa6
+  languageName: node
+  linkType: hard
+
+"vue-gtag@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "vue-gtag@npm:2.0.1"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 949260ae4fbe6db62759d4050fa80c061e39025f7a9f50a97c662cac8d7d8ebf5d60228a7f9aa75d7ea910fb977852e954099a276f432c8cd13a063c40ba4ccd
   languageName: node
   linkType: hard
 
