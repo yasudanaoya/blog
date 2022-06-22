@@ -16,9 +16,10 @@ div(class="flex flex-col justify-center items-center content-center p-10 z-0")
       template(v-for="history in histories")
         .flex.items-center
           span(class="w-6 h-6 rounded-full bg-gray-500 dark:bg-gray-400")
-          h5(class="ml-4 font-bold text-gray-600 dark:text-gray-300")
+          h5(class="ml-4 font-bold text-gray-600 dark:text-gray-300 whitespace-pre-wrap")
             | {{ history.title }}
-            span(class="text-sm text-gray-500 dark:text-gray-400 ml-2")
+            br(class="block md:hidden")
+            span(class="text-sm text-gray-500 dark:text-gray-400 ml-2 ")
               | {{ history.term }}
         .ml-12
           p(class="text-sm whitespace-pre-wrap text-gray-500 dark:text-gray-400")
