@@ -1,14 +1,29 @@
 <template lang="pug">
 div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
-  div.flex.justify-center
+  div.flex.flex-col.justify-center
     content-doc(
       class="prose lg:prose-xl font-notosanjp"
     )
-  div(class="w-60 sticky top-48 self-start mr-12 hidden lg:block")
+    div(
+      class="flex lg:hidden mt-10 justify-center"
+    )
+      button.btn.gap-2.btn-outline(
+        @click="onClickShare"
+      )
+        font-awesome-icon(icon="share-alt")
+        | Share
+  div(class="w-60 sticky top-48 self-start pl-4 mr-12 hidden lg:block")
     template(v-if="data.body")
       table-of-contents(
         :toc="toc"
       )
+      .flex.justify-center.mt-10
+        button.btn.gap-2.btn-outline(
+          @click="onClickShareTwitter"
+        )
+          font-awesome-icon(:icon="['fab', 'twitter']")
+          | Share
+
     template(v-else)
       div.flex.justify-center
         div.animate-spin.h-10.w-10.border-4.border-blue-500.rounded-full.border-t-transparent
@@ -23,8 +38,6 @@ const { data } = await useAsyncData('blog', () => {
   return queryContent('blog').where({ slug: slug }).findOne()
 })
 
-// const image = "https://lh3.googleusercontent.com/pw/AM-JKLXX1eYtNBXm1RUXXyT4R59fYtSNaFrb8nF6MMTGIyKYBt-bWI0fHojfwhGqOUc3OsSe-PRJEk7LRENqbE0kYfCjhm4UEfaxD-xpASTGE_SYnglW8iNO_QK2WyRUqYdcfE_QxRRZHzTlDNpDiWWRnE8=s822-no?authuser=0"
-// const img = `https:${data.value.image}`
 const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`
 
 useHead({
@@ -59,5 +72,24 @@ onMounted(() => {
     location.reload()
   }
 })
+
+const onClickShare = () => {
+  if (navigator.share) {
+    navigator.share({
+      title: data.value.title,
+      text: data.value.title,
+      url: location.href,
+    })
+  }
+}
+
+const onClickShareTwitter = () => {
+  const baseUrl = 'https://twitter.com/intent/tweet?'
+  const text = ['text', data.value.title]
+  const url = ['url', location.href]
+  const parameter = new URLSearchParams([text, url]).toString()
+  const shareUrl = `${baseUrl}${parameter}`
+  window.open(shareUrl, 'twitter', 'top=200,left=300,width=600,height=400')
+}
 
 </script>
