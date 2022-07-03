@@ -2,7 +2,7 @@
 div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
   div.flex.flex-col.justify-center
     content-doc(
-      class="prose lg:prose-xl font-notosanjp"
+      class="prose lg:prose-xl font-notosanjp self-center"
     )
     div(
       class="flex lg:hidden mt-10 justify-center"
