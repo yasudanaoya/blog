@@ -6,7 +6,6 @@ div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
     )
     div(
       class="flex lg:hidden mt-10 justify-center"
-      v-show="showShareBtn"
     )
       button.btn.gap-2.btn-outline(
         @click="onClickShare"
@@ -72,11 +71,6 @@ onMounted(() => {
   } else {
     location.reload()
   }
-})
-
-const showShareBtn = ref(true)
-onMounted(() => {
-  showShareBtn.value = !!navigator.share
 })
 
 const onClickShare = () => {
