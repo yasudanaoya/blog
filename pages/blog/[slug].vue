@@ -7,22 +7,20 @@ div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
     div(
       class="flex lg:hidden mt-10 justify-center"
     )
-      button.btn.gap-2.btn-outline(
+      button.btn.rounded-full.btn-outline(
         @click="onClickShare"
       )
         font-awesome-icon(icon="share-alt")
-        | Share
   div(class="w-60 sticky top-48 self-start pl-4 mr-12 hidden lg:block")
     template(v-if="data.body")
       table-of-contents(
         :toc="toc"
       )
       .flex.justify-center.mt-10
-        button.btn.gap-2.btn-outline(
+        button.btn.rounded-full.btn-outline(
           @click="onClickShareTwitter"
         )
           font-awesome-icon(:icon="['fab', 'twitter']")
-          | Share
 
     template(v-else)
       div.flex.justify-center
