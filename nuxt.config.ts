@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     SUPABASE_KEY: process.env.SUPABASE_KEY,
     BASE_URL:
       process.env.NODE_ENV === "production"
-        ? "https://yasudanaoya.com/"
+        ? "https://yanskun.com/"
         : "http://localhost:3000",
   },
 

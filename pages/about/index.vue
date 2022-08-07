@@ -66,12 +66,11 @@ div(class="flex flex-col justify-center items-center content-center p-10 z-0")
                     rating(:value="skill.value")
 
     .divider
-    h2 Resume
-    p 詳しくは、
-      a.link(href="https://yasudanaoya.github.io/resume/" target="_blank") こちら
-      | をご覧ください
-    //- a.link(href="https://yasudanaoya.github.io/resume/" target="_blank")
-      | Resume
+    h2 And More
+    p
+      font-awesome-icon(icon="book")
+      a.link.ml-1(href="https://yanskun.github.io/resume/" target="_blank")
+        span Resume
 
 </template>
 

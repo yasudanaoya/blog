@@ -9,7 +9,7 @@ tags:
 ---
 # とある PR のおかげで Neovim がもはや VSCode な件について
 
-[yasudanaoya](http://github.com/yasudanaoya) です。
+[yanskun](http://github.com/yanskun) です。
 
 以前、Neovim の設定を結構丁寧におこなって、それ自体楽しんでいることについてブログを書きました。
 

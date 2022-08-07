@@ -11,20 +11,20 @@ export const tabs = [
     name: "Blog",
     path: "/blog",
   },
-  {
-    name: "Photo",
-    path: "/photo",
-  },
+  // {
+  //   name: "Photo",
+  //   path: "/photo",
+  // },
 ];
 
 export const links = [
   {
     icon: ["fab", "twitter"],
-    href: "https://twitter.com/708yasuda",
+    href: "https://twitter.com/yanskun",
   },
   {
     icon: ["fab", "github"],
-    href: "https://github.com/yasudanaoya",
+    href: "https://github.com/yanskun",
   },
   {
     icon: ["fab", "facebook"],
