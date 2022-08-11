@@ -34,6 +34,9 @@ div(class="flex flex-col justify-center items-center content-center")
         code   \ V  V / (_) | |  | | (_| |
       pre(class="hidden md:block")
         code    \_/\_/ \___/|_|  |_|\__,_|
+
+      pre(class="block md:hidden" data-prefix=" ")
+        code HELLO WORLD
 </template>
 
 <script setup lang="ts">
