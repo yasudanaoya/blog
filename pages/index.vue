@@ -3,9 +3,9 @@ div(class="flex flex-col justify-center items-center content-center")
   div(class="mockup-code w-1/2")
     pre(data-prefix="$")
       code {{ command }}
-      code(v-if="!typed") |
+      code(v-if="!pushedEnter") |
     template(v-if="!isFinish")
-      pre.text-warning(v-if="typed" data-prefix=">")
+      pre.text-warning(v-if="pushedEnter" data-prefix=">")
         code installing...
       pre
         code {{ "#".repeat(inProgress) }}
@@ -41,39 +41,42 @@ div(class="flex flex-col justify-center items-center content-center")
 
 <script setup lang="ts">
 const command = ref("")
-const typed = ref(false)
+const pushedEnter = ref(false)
 
 onMounted(() => {
   const value = "get yanskun".split("")
-  const interval = setInterval(() => {
-    command.value = command.value + value.shift()
-    if (value.length === 0) {
-      clearInterval(interval)
-      setTimeout(() => {
-        typed.value = true
-      }, 400)
-    }
-  }, 30)
+  setTimeout(() => {
+    const interval = setInterval(() => {
+      command.value = command.value + value.shift()
+      if (value.length === 0) {
+        clearInterval(interval)
+        setTimeout(() => {
+          pushedEnter.value = true
+        }, 400)
+      }
+    }, 30)
+  }, 500);
 })
-
 
 const inProgress = ref(0)
 const isFinish = ref(false)
 const hello = ref(false)
 
 onMounted(() => {
-  const itd = setInterval(() => {
-    if (typed.value) {
-      inProgress.value++
-      if (inProgress.value > 20) {
-        clearInterval(itd)
-        setTimeout(() => {
-          isFinish.value = true
+  const interval = setInterval(() => {
+    if (pushedEnter.value) {
+      setTimeout(() => {
+        inProgress.value++
+        if (inProgress.value > 20) {
+          clearInterval(interval)
           setTimeout(() => {
-            hello.value = true
+            isFinish.value = true
+            setTimeout(() => {
+              hello.value = true
+            }, 600)
           }, 600)
-        }, 600)
-      }
+        }
+      }, 200);
     }
   }, 50)
 })
