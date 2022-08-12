@@ -1,2 +1,8 @@
 [[plugins]]
 package = "@netlify/plugin-sitemap"
+
+[[redirects]]
+from = "https://yasudanaoya.com/"
+to = "https://yanskun.com/"
+status = 301
+force = true
