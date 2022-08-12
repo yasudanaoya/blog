@@ -38,8 +38,8 @@ jobs:
       - name: Archive Artifact 📮
         uses: actions/upload-artifact@master
         with:
-          name: dist
-          path: dist
+          name: .output
+          path: .output
 
   deploy:
     name: Deploy
@@ -53,11 +53,11 @@ jobs:
       - name: Download Artifact 📬
         uses: actions/download-artifact@master
         with:
-          name: dist
-          path: dist
+          name: .output
+          path: .output
 
       - name: Deploy to Netlify 🚀
-        run: npx netlify-cli deploy --dir=dist --prod
+        run: npx netlify-cli deploy --dir=.output --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
