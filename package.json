@@ -20,12 +20,10 @@
     "daisyui": "^2.15.3",
     "nuxt": "3.0.0-rc.3",
     "pug": "^3.0.2",
+    "rss": "^1.2.2",
     "sass": "1.32.13",
     "sitemap": "^7.1.1",
     "vue-gtag": "^2.0.1",
     "vue3-smooth-scroll": "^0.8.1"
-  },
-  "dependencies": {
-    "@nuxtjs/feed": "^2.0.0"
   }
 }
