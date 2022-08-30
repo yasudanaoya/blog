@@ -32,8 +32,8 @@ const { path } = useRoute()
 const config = useRuntimeConfig()
 
 const { data } = await useAsyncData('blog', () => {
-  const slug = path.split('/').pop()
-  return queryContent('blog').where({ slug: slug }).findOne()
+  const filename = path.split('/').pop()
+  return queryContent('blog', filename).findOne()
 })
 
 const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`

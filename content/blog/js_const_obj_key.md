@@ -2,7 +2,6 @@
 title: Object の value を rename して取り出す
 description: 今更知ったシリーズ
 date: 2022-06-13
-slug: js_const_obj_key
 image: JavaScript.png
 tags:
   - JavaScript
