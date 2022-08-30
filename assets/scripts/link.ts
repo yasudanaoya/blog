@@ -30,8 +30,8 @@ export const links = [
     icon: ["fab", "facebook"],
     href: "https://www.facebook.com/naoya.yasuda.50",
   },
-  // {
-  //   icon: "feed",
-  //   href: "https://rss.app/feeds/IHpvnKKhP0zP0f4i.xml",
-  // },
+  {
+    icon: "feed",
+    href: "https://yanskun.com/rss.xml",
+  },
 ];
