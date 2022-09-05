@@ -13,7 +13,7 @@ tags:
 
 今更なのだが、
 
-```JavaScript
+```ts
 const obj = {
   key: 'value'
 }
@@ -28,7 +28,7 @@ console.log(hoge)
 
 以前までは
 
-```JavaScript
+```ts
 const obj = {
   key: 'value'
 }

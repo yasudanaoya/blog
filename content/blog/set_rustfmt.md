@@ -43,7 +43,7 @@ https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary
 
 いかが MacOS 用に変更したコマンドになる。
 
-```bash
+```shell
 $ curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-aarch64-apple-darwin.gz | gunzip -c - > ~/.local/bin/rust-analyzer
 $ chmod +x ~/.local/bin/rust-analyzer
 ```

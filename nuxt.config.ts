@@ -23,6 +23,33 @@ export default defineNuxtConfig({
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/supabase", "@nuxt/content"],
 
+  content: {
+    highlight: {
+      theme: "nord",
+      // theme: {
+      //   // Default theme (same as single string)
+      //   default: "nord",
+      //   // Theme used if `html.dark`
+      //   dark: "github-dark",
+      //   // Theme used if `html.sepia`
+      //   sepia: "monokai",
+      // },
+      preload: [
+        "bash",
+        "diff",
+        "json",
+        "lua",
+        "js",
+        "ts",
+        "css",
+        "shell",
+        "html",
+        "md",
+        "yaml",
+      ],
+    },
+  },
+
   generate: {
     fallback: "404.html",
     routes: ["/", "/404.html"],

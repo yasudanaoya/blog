@@ -81,15 +81,7 @@ lualine 側の options.globalstatus を true にしてあげる必要があり�
 
 これで準備は OK です。
 
-## 結果
-
-### Before
-
-![before](https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/contents/2022-04-08_11.45.52.png)
-
-### After
-
-![after](https://icxboltnnvznqlpuzkyg.supabase.co/storage/v1/object/public/blog/contents/2022-04-08_11.43.43.png)
+## 総評
 
 これまで僕が感じていた課題としては
 

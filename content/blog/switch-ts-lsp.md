@@ -74,15 +74,15 @@ end
 
 denols だと
 ```lua
-    root_dir = lspconfig.util.root_pattern("deno.json", "denops"),
+root_dir = lspconfig.util.root_pattern("deno.json", "denops"),
 ```
 
 root に deno.json か denops ってファイル or フォルダがあったら、動かすよ。
 で
 
 tsserver だと
-```lau
-    root_dir = lspconfig.util.root_pattern("package.json"),
+```lua
+root_dir = lspconfig.util.root_pattern("package.json"),
 ```
 
 root に package.json があったら動かすよ。
