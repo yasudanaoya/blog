@@ -12,7 +12,7 @@ n番煎じである
 
 ## 構成
 
-```bash
+```
 .config/vim/lua/lsp/
 ├── denols.lua
 ├── tsserver.lua

@@ -1,5 +1,9 @@
 <template lang="pug">
 div.relative
+  span(
+    v-if="language"
+    class="absolute top-0 py-2 px-4 text-xs text-gray-100 bg-zinc-500 dark:bg-gray-800 rounded-br-lg"
+  ) {{ language }}
   slot
   label(
     class="absolute top-0 right-4 normal-case btn btn-ghost rounded-btn hover:text-rose-600  dark:hover:text-sky-300 hover:bg-inherit"
