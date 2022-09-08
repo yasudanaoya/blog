@@ -38,8 +38,11 @@ const onClick = () => {
 </script>
 
 <style lang="scss">
-  pre code .line {
-    display: block;
-    min-height: 1rem;
+  pre {
+    padding-top: 2.1111111em !important;
+    code .line {
+      display: block;
+      min-height: 1rem;
+    }
   }
 </style>
