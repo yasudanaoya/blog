@@ -11,7 +11,7 @@ module.exports = {
   plugins: [require("daisyui"), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp'),],
 
   daisyui: {
-    themes: ['cupcake', 'halloween'],
+    themes: ['fantasy', 'halloween'],
     darkTheme: "halloween",
   }
 };

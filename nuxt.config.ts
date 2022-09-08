@@ -18,6 +18,7 @@ export default defineNuxtConfig({
 
   css: [
     "@/assets/styles/tailwind.css",
+    "@/assets/styles/app.scss",
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
@@ -28,11 +29,11 @@ export default defineNuxtConfig({
       theme: "nord",
       // theme: {
       //   // Default theme (same as single string)
-      //   default: "nord",
+      //   default: "monokai",
       //   // Theme used if `html.dark`
-      //   dark: "github-dark",
+      //   dark: "nord",
       //   // Theme used if `html.sepia`
-      //   sepia: "monokai",
+      //   // sepia: "monokai",
       // },
       preload: [
         "bash",
