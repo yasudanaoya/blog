@@ -11,12 +11,18 @@ div.relative
     @click="onClick"
   )
     span.mr-2(v-if="copied") Copied code!
-    span.mr-2(v-else="copied") Copy
-    font-awesome-icon(icon="copy")
+    span.mr-2(v-else-if="isHovered") Copy
+    font-awesome-icon(icon="copy" v-element-hover="onHover")
 </template>
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core';
+import { vElementHover } from "@vueuse/components"
+
+const isHovered = ref(false)
+function onHover(state: boolean) {
+  isHovered.value = state
+}
 
 const { copy, copied } = useClipboard();
 

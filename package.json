@@ -17,6 +17,7 @@
     "@nuxtjs/tailwindcss": "^5.1.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
+    "@vueuse/components": "^9.2.0",
     "@vueuse/core": "^9.2.0",
     "@vueuse/nuxt": "^9.2.0",
     "daisyui": "^2.15.3",

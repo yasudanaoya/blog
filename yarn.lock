@@ -1675,6 +1675,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/components@npm:^9.2.0":
+  version: 9.2.0
+  resolution: "@vueuse/components@npm:9.2.0"
+  dependencies:
+    "@vueuse/core": 9.2.0
+    "@vueuse/shared": 9.2.0
+    vue-demi: "*"
+  checksum: 198a3c94ec3c90faa5f4589f5cc6f18f9a7bbaeef27cfe364381fb79312c50a29d560615cde2c109b62a30fe7229db34afe40d335c7ff7c042583730fbf4f1ae
+  languageName: node
+  linkType: hard
+
 "@vueuse/core@npm:9.2.0, @vueuse/core@npm:^9.2.0":
   version: 9.2.0
   resolution: "@vueuse/core@npm:9.2.0"
@@ -8514,6 +8525,7 @@ __metadata:
     "@nuxtjs/tailwindcss": ^5.1.2
     "@tailwindcss/line-clamp": ^0.4.0
     "@tailwindcss/typography": ^0.5.2
+    "@vueuse/components": ^9.2.0
     "@vueuse/core": ^9.2.0
     "@vueuse/nuxt": ^9.2.0
     daisyui: ^2.15.3
