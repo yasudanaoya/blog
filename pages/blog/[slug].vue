@@ -2,7 +2,7 @@
 div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
   div.flex.flex-col.justify-center
     content-doc(
-      class="prose lg:prose-xl font-sawarabi self-center"
+      class="doc prose lg:prose-xl font-sawarabi self-center"
     )
     div(
       class="flex lg:hidden mt-10 justify-center"
@@ -91,3 +91,14 @@ const onClickShareTwitter = () => {
 }
 
 </script>
+
+<style lang="scss">
+  .doc {
+    max-width: 30ch;
+  }
+  @media screen and (min-width: 1024px) {
+    .doc {
+      max-width: 64ch;
+    }
+  }
+</style>
