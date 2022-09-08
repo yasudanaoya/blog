@@ -22,7 +22,12 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/supabase", "@nuxt/content"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/supabase",
+    "@nuxt/content",
+    "@vueuse/nuxt",
+  ],
 
   content: {
     highlight: {
