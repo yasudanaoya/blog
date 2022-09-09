@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
   div.flex.flex-col.justify-center
-    article(class="doc prose lg:prose-xl font-sawarabi self-center")
+    article(class="doc prose break-words lg:prose-xl font-sawarabi self-center")
       h1 {{ data.title }}
       content-doc
     div(
