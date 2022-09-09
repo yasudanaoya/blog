@@ -8,9 +8,6 @@ tags:
   - LSP
   - Rust
 ---
-
-# Neovim で Rust の開発ができるようにした(format できるようにした)
-
 ## 動機
 
 流行ってるので、俺も Rust が書きたいって思った。  

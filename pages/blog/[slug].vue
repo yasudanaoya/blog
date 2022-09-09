@@ -1,9 +1,9 @@
 <template lang="pug">
 div(class="lg:grid lg:grid-cols-[1fr_auto] p-10")
   div.flex.flex-col.justify-center
-    content-doc(
-      class="doc prose lg:prose-xl font-sawarabi self-center"
-    )
+    article(class="doc prose lg:prose-xl font-sawarabi self-center")
+      h1 {{ data.title }}
+      content-doc
     div(
       class="flex lg:hidden mt-10 justify-center"
     )
@@ -95,6 +95,10 @@ const onClickShareTwitter = () => {
 <style lang="scss">
   .doc {
     max-width: 30ch;
+
+    h1 {
+      line-height: 1.2;
+    }
   }
   @media screen and (min-width: 1024px) {
     .doc {

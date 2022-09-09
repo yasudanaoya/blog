@@ -6,9 +6,6 @@ image: JavaScript.png
 tags:
   - JavaScript
 ---
-
-# Object の value を rename して取り出す
-
 ## rename
 
 今更なのだが、
