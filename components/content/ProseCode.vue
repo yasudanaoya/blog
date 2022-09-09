@@ -1,5 +1,5 @@
 <template lang="pug">
-div.relative
+div.code-block.relative
   span(
     v-if="language"
     class="absolute top-0 py-2 px-4 text-xs text-gray-100 bg-zinc-500 dark:bg-gray-800 rounded-br-lg"
@@ -48,11 +48,13 @@ const onClick = () => {
 </script>
 
 <style lang="scss">
-  pre {
-    padding-top: 2.1111111em !important;
-    code .line {
-      display: block;
-      min-height: 1rem;
+  .code-block {
+    pre {
+      padding-top: 2.1111111em !important;
+      code .line {
+        display: block;
+        min-height: 1rem;
+      }
     }
   }
 </style>
