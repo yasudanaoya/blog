@@ -1,7 +1,11 @@
 <template lang="pug">
 div.code-block.relative
   span(
-    v-if="language"
+    v-if="filename"
+    class="absolute top-0 py-2 px-4 text-xs text-gray-100 bg-zinc-500 dark:bg-gray-800 rounded-br-lg"
+  ) {{ filename }}
+  span(
+    v-else-if="language"
     class="absolute top-0 py-2 px-4 text-xs text-gray-100 bg-zinc-500 dark:bg-gray-800 rounded-br-lg"
   ) {{ language }}
   slot
@@ -19,13 +23,6 @@ div.code-block.relative
 import { useClipboard } from '@vueuse/core';
 import { vElementHover } from "@vueuse/components"
 
-const isHovered = ref(false)
-function onHover(state: boolean) {
-  isHovered.value = state
-}
-
-const { copy, copied } = useClipboard();
-
 const props = defineProps({
   code: {
     type: String,
@@ -40,6 +37,13 @@ const props = defineProps({
     default: ''
   }
 })
+
+const isHovered = ref(false)
+function onHover(state: boolean) {
+  isHovered.value = state
+}
+
+const { copy, copied } = useClipboard();
 
 const onClick = () => {
   copy(props.code)

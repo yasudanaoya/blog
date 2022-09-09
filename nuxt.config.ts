@@ -51,6 +51,7 @@ export default defineNuxtConfig({
         "shell",
         "html",
         "md",
+        "vue",
         "yaml",
       ],
     },
