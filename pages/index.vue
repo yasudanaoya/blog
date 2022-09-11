@@ -81,5 +81,21 @@ onMounted(() => {
   }, 50)
 })
 
+onMounted(() => {
+  console.log(`Welcome to my portfolio!
+My name is %cyanskun%c a.k.a Naoya Yasuda
+If you're interested, hit me up on %cTwitter%c
+https://twitter.com/yanskun
+
+Thanks for opening and finding this place.
+I'm sure it will be fine.
+`,
+  "color:white; background-color:purple; border-radius:4px; padding: 0 4px;",
+  "",
+  "color:white; background-color:#00acee; border-radius:4px; padding: 0 4px",
+  ""
+)
+})
+
 
 </script>
