@@ -29,17 +29,18 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
   ],
 
+  build: {
+    transpile: [
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/free-solid-svg-icons",
+      "@fortawesome/vue-fontawesome",
+    ],
+  },
+
   content: {
     highlight: {
       theme: "nord",
-      // theme: {
-      //   // Default theme (same as single string)
-      //   default: "monokai",
-      //   // Theme used if `html.dark`
-      //   dark: "nord",
-      //   // Theme used if `html.sepia`
-      //   // sepia: "monokai",
-      // },
       preload: [
         "bash",
         "diff",
