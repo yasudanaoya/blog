@@ -37,13 +37,13 @@ div(class="flex flex-col justify-center items-center content-center p-10 z-0")
             table.table.table-zebra.w-full
               thead
                 tr
-                  th Name
+                  th.padding Name
                   th Value
               tbody
                 tr(
                   v-for="(item) in items"
                 )
-                  td {{ item.name }}
+                  td.padding {{ item.name }}
                   td {{ convertItemValue(item.value) }}
 
         div(class="divider lg:divider-horizontal")
@@ -55,13 +55,13 @@ div(class="flex flex-col justify-center items-center content-center p-10 z-0")
             table.table.table-zebra.w-full
               thead
                 tr
-                  th Name
+                  th.padding Name
                   th Level
               tbody
                 tr(
                   v-for="skill in skills"
                 )
-                  td {{ skill.name }}
+                  td.padding {{ skill.name }}
                   td
                     rating(:value="skill.value")
 
@@ -137,3 +137,9 @@ const skills: Skill[] = [
   { name: 'Flutter', value: 1 },
 ]
 </script>
+
+<style lang="scss" scoped>
+  .padding {
+    padding-left: 0.5rem;
+  }
+</style>
