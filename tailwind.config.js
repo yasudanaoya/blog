@@ -8,7 +8,12 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui"), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp'),],
+  plugins: [
+    require("daisyui"),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
+  ],
 
   daisyui: {
     themes: ['fantasy', 'halloween'],

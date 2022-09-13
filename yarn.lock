@@ -1297,6 +1297,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/aspect-ratio@npm:latest":
+  version: 0.4.2
+  resolution: "@tailwindcss/aspect-ratio@npm:0.4.2"
+  peerDependencies:
+    tailwindcss: ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+  checksum: e998fcb0c1a55cae4e83c4510fed0d4d1cba845b7ed79a18451f55377d4a177050c2401af59222662a216aa9c407ef49c475c93db8e13246e0bb3f1ed42f78f8
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/line-clamp@npm:^0.4.0":
   version: 0.4.0
   resolution: "@tailwindcss/line-clamp@npm:0.4.0"
@@ -1483,13 +1492,6 @@ __metadata:
   version: 0.0.15
   resolution: "@types/web-bluetooth@npm:0.0.15"
   checksum: 4e3b3b1c0baf6735690ce0c5ffaac53de3dbd16362316cbc5e32970bcb1e1baf16dae0a9f30fe86256ad0ee22a4533423f443835273efc54b15235086ebda85b
-  languageName: node
-  linkType: hard
-
-"@types/youtube@npm:^0.0.39":
-  version: 0.0.39
-  resolution: "@types/youtube@npm:0.0.39"
-  checksum: 08799b0d8ed1ebb7eb6a650bdaf76c8f49ba2a0e0c64564c0280dfc56da9c26de2474bf2014852ddb574d2fc17d00bf08720b60578c6f5bfb5704cb7e363329f
   languageName: node
   linkType: hard
 
@@ -2808,13 +2810,6 @@ __metadata:
     depd: ~2.0.0
     keygrip: ~1.1.0
   checksum: 806055a44f128705265b1bc6a853058da18bf80dea3654ad99be20985b1fa1b14f86c1eef73644aab8071241f8a78acd57202b54c4c5c70769fc694fbb9c4edc
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^3.6.5":
-  version: 3.25.1
-  resolution: "core-js@npm:3.25.1"
-  checksum: bfacb078e790913841e2d5008b9b6705ae56ed23f83c7f0ae08d330d874561012611089d53b71520105234ed0abba36f28d91b391514a16541a8c8d98c464239
   languageName: node
   linkType: hard
 
@@ -4365,13 +4360,6 @@ __metadata:
   version: 6.0.1
   resolution: "get-stream@npm:6.0.1"
   checksum: e04ecece32c92eebf5b8c940f51468cd53554dcbb0ea725b2748be583c9523d00128137966afce410b9b051eb2ef16d657cd2b120ca8edafcf5a65e81af63cad
-  languageName: node
-  linkType: hard
-
-"get-youtube-id@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "get-youtube-id@npm:1.0.1"
-  checksum: 64790c99e0c25f45558b903c9b96ab72f9bcb381e61f78dc4dc9df824206aa162f5e7b2400050d4e883eda4031a2abc1c6e5ca081d253c1d43559c5546ce53d5
   languageName: node
   linkType: hard
 
@@ -8544,6 +8532,7 @@ __metadata:
     "@nuxt/content": ^2.1.0
     "@nuxtjs/supabase": ^0.1.16
     "@nuxtjs/tailwindcss": ^5.1.2
+    "@tailwindcss/aspect-ratio": latest
     "@tailwindcss/line-clamp": ^0.4.0
     "@tailwindcss/typography": ^0.5.2
     "@vueuse/components": ^9.2.0
@@ -8558,7 +8547,6 @@ __metadata:
     sitemap: ^7.1.1
     vue-gtag: ^2.0.1
     vue3-smooth-scroll: ^0.8.1
-    vue3-youtube: ^0.1.9
   languageName: unknown
   linkType: soft
 
@@ -10087,19 +10075,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue3-youtube@npm:^0.1.9":
-  version: 0.1.9
-  resolution: "vue3-youtube@npm:0.1.9"
-  dependencies:
-    "@types/youtube": ^0.0.39
-    core-js: ^3.6.5
-    get-youtube-id: ^1.0.1
-    vue: ^3.0.0
-  checksum: e39885a3ff7e29c974fc24ad38630a5a4db89cc43ef5afabda8adf055eb90fb4088452b87ca82edb0ba0dd2466dd15b9a2e5fb0d7759d4bb978cdc45064a3a96
-  languageName: node
-  linkType: hard
-
-"vue@npm:^3.0.0, vue@npm:^3.2.38":
+"vue@npm:^3.2.38":
   version: 3.2.39
   resolution: "vue@npm:3.2.39"
   dependencies:

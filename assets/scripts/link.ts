@@ -15,6 +15,10 @@ export const tabs = [
     name: "Photo",
     path: "/photo",
   },
+  {
+    name: "History",
+    path: "/history",
+  },
 ];
 
 export const links = [
