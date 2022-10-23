@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="flex flex-col justify-center items-center content-center p-10 z-0")
-  .avatar.py-6
+  //- .avatar.py-6
     .w-24.mask.mask-squircle
       img(src="/icon/illust.jpeg")
   article(class="prose lg:prose-xl w-full flex flex-col items-center")
@@ -135,6 +135,7 @@ const skills: Skill[] = [
   { name: 'Lua', value: 2 },
   { name: 'Ruby', value: 1 },
   { name: 'Flutter', value: 1 },
+  { name: 'Rust', value: 1 },
 ]
 </script>
 
