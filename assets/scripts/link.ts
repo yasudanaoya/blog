@@ -11,10 +11,10 @@ export const tabs = [
     name: "Blog",
     path: "/blog",
   },
-  {
-    name: "Photo",
-    path: "/photo",
-  },
+  // {
+  //   name: "Photo",
+  //   path: "/photo",
+  // },
   {
     name: "History",
     path: "/history",
