@@ -7,19 +7,25 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: cache
-        uses: actions/cache@v2
+      - name: Configure Yarn
+        id: yarn-config
+        shell: bash
+        run: |
+          echo "CACHE_FOLDER=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+          
+      - name: Use Yarn cache
+        uses: actions/cache@9b0c1fce7a93df8e3bb8926b0d6e9d89e92f20a7 # tag=v3.0.11
         id: yarn-cache
         with:
-          path: |
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('./yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
-      - name: yarn install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile --non-interactive
-      - name: Generate
+          path: ${{ steps.yarn-config.outputs.CACHE_FOLDER }}
+          key: yarn-cache-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            yarn-cache-
+            
+      - name: Install dependencies
+        run: yarn install --immutable --inline-builds
+        
+      - name: Generate Nuxt Project
         run: yarn generate
 
 
