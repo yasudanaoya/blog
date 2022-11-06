@@ -27,7 +27,7 @@
     "postcss-custom-properties": "^12.1.8",
     "pug": "^3.0.2",
     "rss": "^1.2.2",
-    "sass": "1.32.13",
+    "sass": "1.56.0",
     "sitemap": "^7.1.1",
     "vue-gtag": "^2.0.1",
     "vue3-smooth-scroll": "^0.8.1"
