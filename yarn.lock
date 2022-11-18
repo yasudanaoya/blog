@@ -2810,9 +2810,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.15.3":
-  version: 2.38.1
-  resolution: "daisyui@npm:2.38.1"
+"daisyui@npm:^2.41.0":
+  version: 2.41.0
+  resolution: "daisyui@npm:2.41.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -2821,7 +2821,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 0f36fa53ae8b3903c73b73dd39070da8c09bf6ea21a198d6c52a401fac18f276b0c062c32c4670eb7a1b63cc3753ee9489469adfbab25cb73f63191dc11ce2fe
+  checksum: 3b702493d2a172d3a195da30a10fe7eaec78534ae58c7cf2a1af59ce6701430130b498dcc29c8058e0657848e1609317a6a9a4ab9c672cc79b325b22012e7791
   languageName: node
   linkType: hard
 
@@ -7926,7 +7926,7 @@ __metadata:
     "@vueuse/components": ^9.2.0
     "@vueuse/core": ^9.2.0
     "@vueuse/nuxt": ^9.2.0
-    daisyui: ^2.15.3
+    daisyui: ^2.41.0
     nuxt: 3.0.0-rc.13
     postcss-custom-properties: ^12.1.8
     pug: ^3.0.2
