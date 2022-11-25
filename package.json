@@ -20,7 +20,7 @@
     "@tailwindcss/typography": "^0.5.7",
     "@volar/vue-language-plugin-pug": "^1.0.8",
     "@vueuse/components": "^9.2.0",
-    "@vueuse/core": "^9.2.0",
+    "@vueuse/core": "^9.6.0",
     "@vueuse/nuxt": "^9.2.0",
     "daisyui": "^2.15.3",
     "nuxt": "3.0.0-rc.13",
