@@ -6,7 +6,7 @@ image: Neovim@8.png
 tags:
   - Neovim
 ---
-[yanskun](http://github.com/yanskun) です。
+[yanskun](https://github.com/yanskun) です。
 
 以前、Neovim の設定を結構丁寧におこなって、それ自体楽しんでいることについてブログを書きました。
 

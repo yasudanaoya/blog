@@ -6,7 +6,7 @@
     div(v-for="video in videos")
       a(:href="`https://www.youtube.com/watch?v=${video.id}`" target="_blank")
         img(
-          :src="`http://img.youtube.com/vi/${video.id}/hqdefault.jpg`"
+          :src="`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`"
         )
       .flex.justify-center.text-m.mt-2
         | {{ video.name }}
