@@ -682,7 +682,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.0.0":
+"@nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.0.0-rc.13":
   version: 3.0.0
   resolution: "@nuxt/kit@npm:3.0.0"
   dependencies:
@@ -1554,7 +1554,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^9.6.0":
+"@vueuse/core@npm:9.6.0, @vueuse/core@npm:^9.6.0":
   version: 9.6.0
   resolution: "@vueuse/core@npm:9.6.0"
   dependencies:
@@ -1593,18 +1593,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^9.2.0":
-  version: 9.4.0
-  resolution: "@vueuse/nuxt@npm:9.4.0"
+"@vueuse/nuxt@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/nuxt@npm:9.6.0"
   dependencies:
-    "@nuxt/kit": ^3.0.0-rc.11
-    "@vueuse/core": 9.4.0
-    "@vueuse/metadata": 9.4.0
+    "@nuxt/kit": ^3.0.0-rc.13
+    "@vueuse/core": 9.6.0
+    "@vueuse/metadata": 9.6.0
     local-pkg: ^0.4.2
     vue-demi: "*"
   peerDependencies:
     nuxt: ^3.0.0-rc.9
-  checksum: 090668f886cd9334da45cf62e3b79fb7d57316ef18949457a924dff2163842bc3a6502a5da95cdaa5b52a684eab6333b172aaa5f6e2ded92cb789181bed00ca6
+  checksum: 4f91b3d16af5f0bd20d36b6b2a44bc6e9f61058727d5144852f7558cc4786045688d317770e981a6986e8de5dae8fa11c674849c75377f56c5bec07d4d31d809
   languageName: node
   linkType: hard
 
@@ -8085,7 +8085,7 @@ __metadata:
     "@volar/vue-language-plugin-pug": ^1.0.8
     "@vueuse/components": ^9.2.0
     "@vueuse/core": ^9.6.0
-    "@vueuse/nuxt": ^9.2.0
+    "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
     nuxt: 3.0.0-rc.13
     postcss-custom-properties: ^12.1.8
