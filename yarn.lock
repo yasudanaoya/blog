@@ -6962,7 +6962,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^12.1.8, postcss-custom-properties@npm:^12.1.9":
+"postcss-custom-properties@npm:^12.1.11":
+  version: 12.1.11
+  resolution: "postcss-custom-properties@npm:12.1.11"
+  dependencies:
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    postcss: ^8.2
+  checksum: 421f9d8d6b9c9066919f39251859232efc4dc5dd406c01e62e08734319a6ccda6d03dd6b46063ba0971053ac6ad3f7abade56d67650b3e370851b2291e8e45e6
+  languageName: node
+  linkType: hard
+
+"postcss-custom-properties@npm:^12.1.9":
   version: 12.1.10
   resolution: "postcss-custom-properties@npm:12.1.10"
   dependencies:
@@ -8095,7 +8106,7 @@ __metadata:
     "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
     nuxt: 3.0.0-rc.13
-    postcss-custom-properties: ^12.1.8
+    postcss-custom-properties: ^12.1.11
     pug: ^3.0.2
     rss: ^1.2.2
     sass: 1.56.1
