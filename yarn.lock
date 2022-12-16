@@ -1552,26 +1552,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/components@npm:^9.2.0":
-  version: 9.4.0
-  resolution: "@vueuse/components@npm:9.4.0"
+"@vueuse/components@npm:^9.6.0":
+  version: 9.6.0
+  resolution: "@vueuse/components@npm:9.6.0"
   dependencies:
-    "@vueuse/core": 9.4.0
-    "@vueuse/shared": 9.4.0
+    "@vueuse/core": 9.6.0
+    "@vueuse/shared": 9.6.0
     vue-demi: "*"
-  checksum: 30ea74dc498d1d06d03998c3e045d9c75c3e2550496902418fde5c3bf60fbecf5ac90d96bf89f8578642cc39bcfdcc202e0581810a902b9231582aa66b447310
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:9.4.0":
-  version: 9.4.0
-  resolution: "@vueuse/core@npm:9.4.0"
-  dependencies:
-    "@types/web-bluetooth": ^0.0.16
-    "@vueuse/metadata": 9.4.0
-    "@vueuse/shared": 9.4.0
-    vue-demi: "*"
-  checksum: 9b6c8fdb8181e5775790b52e26cdeaaad1f240aaec1a3b840ded8846fca1f63ffc07a77a86e7fa644b534f94e3d5015fe411cb2c9244bfba44427828611ddbbe
+  checksum: 359b863089d3514183987f86af5562e76f7d268eadbbf4b979b8b21eac1163b5318e1b4758faa323c2d62a27369f542c2ff67436be229e4809affb3de93c6cee
   languageName: node
   linkType: hard
 
@@ -1600,13 +1588,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:9.4.0":
-  version: 9.4.0
-  resolution: "@vueuse/metadata@npm:9.4.0"
-  checksum: c00af0262b6a23af9df80bd0facdb1da91894839e2386442ca74f374105babe9d6bd99a16c89646b720a09d529cb7fd7005afce8d392941ccf86200cef0e53f8
-  languageName: node
-  linkType: hard
-
 "@vueuse/metadata@npm:9.6.0":
   version: 9.6.0
   resolution: "@vueuse/metadata@npm:9.6.0"
@@ -1629,21 +1610,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:9.4.0, @vueuse/shared@npm:^9.2.0, @vueuse/shared@npm:^9.3.1":
-  version: 9.4.0
-  resolution: "@vueuse/shared@npm:9.4.0"
-  dependencies:
-    vue-demi: "*"
-  checksum: 4eb1d81587c49023a62553e5f7ec230cd399ab43b9fc8d06a0a8f95088e5231de5645355afbdaad87101cf34edb3a1d831b766de91e441662c6f1b1c81ea4f3f
-  languageName: node
-  linkType: hard
-
 "@vueuse/shared@npm:9.6.0":
   version: 9.6.0
   resolution: "@vueuse/shared@npm:9.6.0"
   dependencies:
     vue-demi: "*"
   checksum: 33be07a571ba607500f3115c9c4c3cc411644ad62da8241bf9a48b7a2eaadc2523520f4ba65bb87d6db15db8a43bce1599b5fac757d4f6653cacf99927eda280
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:^9.2.0, @vueuse/shared@npm:^9.3.1":
+  version: 9.4.0
+  resolution: "@vueuse/shared@npm:9.4.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 4eb1d81587c49023a62553e5f7ec230cd399ab43b9fc8d06a0a8f95088e5231de5645355afbdaad87101cf34edb3a1d831b766de91e441662c6f1b1c81ea4f3f
   languageName: node
   linkType: hard
 
@@ -8182,7 +8163,7 @@ __metadata:
     "@tailwindcss/line-clamp": ^0.4.2
     "@tailwindcss/typography": ^0.5.8
     "@volar/vue-language-plugin-pug": ^1.0.10
-    "@vueuse/components": ^9.2.0
+    "@vueuse/components": ^9.6.0
     "@vueuse/core": ^9.6.0
     "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
