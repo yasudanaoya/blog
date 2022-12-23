@@ -1552,26 +1552,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/components@npm:^9.2.0":
-  version: 9.4.0
-  resolution: "@vueuse/components@npm:9.4.0"
+"@vueuse/components@npm:^9.8.2":
+  version: 9.8.2
+  resolution: "@vueuse/components@npm:9.8.2"
   dependencies:
-    "@vueuse/core": 9.4.0
-    "@vueuse/shared": 9.4.0
+    "@vueuse/core": 9.8.2
+    "@vueuse/shared": 9.8.2
     vue-demi: "*"
-  checksum: 30ea74dc498d1d06d03998c3e045d9c75c3e2550496902418fde5c3bf60fbecf5ac90d96bf89f8578642cc39bcfdcc202e0581810a902b9231582aa66b447310
-  languageName: node
-  linkType: hard
-
-"@vueuse/core@npm:9.4.0":
-  version: 9.4.0
-  resolution: "@vueuse/core@npm:9.4.0"
-  dependencies:
-    "@types/web-bluetooth": ^0.0.16
-    "@vueuse/metadata": 9.4.0
-    "@vueuse/shared": 9.4.0
-    vue-demi: "*"
-  checksum: 9b6c8fdb8181e5775790b52e26cdeaaad1f240aaec1a3b840ded8846fca1f63ffc07a77a86e7fa644b534f94e3d5015fe411cb2c9244bfba44427828611ddbbe
+  checksum: a7b8c13410c1437d562673c4bc04b7d70d105ca0610e8ad87a160d72ebcd2d6c078d655f8b9dc12e13df20f8b9d47ebc2896883af4e44cd365d8198cb83b60fd
   languageName: node
   linkType: hard
 
@@ -1584,6 +1572,18 @@ __metadata:
     "@vueuse/shared": 9.6.0
     vue-demi: "*"
   checksum: 2831931d71824f6a02f49cc42bc454a59a24b83a29e7902bbd9fce7e814947d466dbced2dad364c51a352c387869a6a44f2e38bd2ec2b38989158377dc7730d6
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:9.8.2":
+  version: 9.8.2
+  resolution: "@vueuse/core@npm:9.8.2"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.16
+    "@vueuse/metadata": 9.8.2
+    "@vueuse/shared": 9.8.2
+    vue-demi: "*"
+  checksum: 0817ed4910c195a31e1afe2da39e0bbd78f73b9470c2af1b11a446e007da576a466e4b9115831bfe431a221443d025d6125d5c45fb7e1b5e48ff3db1c8ccbf2f
   languageName: node
   linkType: hard
 
@@ -1600,17 +1600,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:9.4.0":
-  version: 9.4.0
-  resolution: "@vueuse/metadata@npm:9.4.0"
-  checksum: c00af0262b6a23af9df80bd0facdb1da91894839e2386442ca74f374105babe9d6bd99a16c89646b720a09d529cb7fd7005afce8d392941ccf86200cef0e53f8
-  languageName: node
-  linkType: hard
-
 "@vueuse/metadata@npm:9.6.0":
   version: 9.6.0
   resolution: "@vueuse/metadata@npm:9.6.0"
   checksum: 6873032389f73571396478d37dad37a9164df5ad487e08b338135fcfd2bbdcc519351a08d4b3b4b54ea8a90de06f9d01b5fd351332a26b5ed5cf8322cb9ce9ab
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:9.8.2":
+  version: 9.8.2
+  resolution: "@vueuse/metadata@npm:9.8.2"
+  checksum: f9fe9eb20343af4591afd5a4e9d490927e7db88e6f52ce0e8c000a5baaf905872ff51d8ad8bfe904a5ea12abfdfe0e8ddd535beb27f59ca919e0cf04f53558e6
   languageName: node
   linkType: hard
 
@@ -1629,21 +1629,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:9.4.0, @vueuse/shared@npm:^9.2.0, @vueuse/shared@npm:^9.3.1":
-  version: 9.4.0
-  resolution: "@vueuse/shared@npm:9.4.0"
-  dependencies:
-    vue-demi: "*"
-  checksum: 4eb1d81587c49023a62553e5f7ec230cd399ab43b9fc8d06a0a8f95088e5231de5645355afbdaad87101cf34edb3a1d831b766de91e441662c6f1b1c81ea4f3f
-  languageName: node
-  linkType: hard
-
 "@vueuse/shared@npm:9.6.0":
   version: 9.6.0
   resolution: "@vueuse/shared@npm:9.6.0"
   dependencies:
     vue-demi: "*"
   checksum: 33be07a571ba607500f3115c9c4c3cc411644ad62da8241bf9a48b7a2eaadc2523520f4ba65bb87d6db15db8a43bce1599b5fac757d4f6653cacf99927eda280
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:9.8.2":
+  version: 9.8.2
+  resolution: "@vueuse/shared@npm:9.8.2"
+  dependencies:
+    vue-demi: "*"
+  checksum: 1bfc6d20be49d588897e4e5cd93c164cd69ec6bee2ad16a6a298af47b585256688cb6e04224b377e550050124db688f64d132668e7cf19c9e9a44b4cd13d9ae1
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:^9.2.0, @vueuse/shared@npm:^9.3.1":
+  version: 9.4.0
+  resolution: "@vueuse/shared@npm:9.4.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 4eb1d81587c49023a62553e5f7ec230cd399ab43b9fc8d06a0a8f95088e5231de5645355afbdaad87101cf34edb3a1d831b766de91e441662c6f1b1c81ea4f3f
   languageName: node
   linkType: hard
 
@@ -8182,7 +8191,7 @@ __metadata:
     "@tailwindcss/line-clamp": ^0.4.2
     "@tailwindcss/typography": ^0.5.8
     "@volar/vue-language-plugin-pug": ^1.0.10
-    "@vueuse/components": ^9.2.0
+    "@vueuse/components": ^9.8.2
     "@vueuse/core": ^9.6.0
     "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
