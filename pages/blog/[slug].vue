@@ -36,7 +36,7 @@ const { data } = await useAsyncData('blog', () => {
   return queryContent('blog', filename).findOne()
 })
 
-const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`
+// const img = `${config.public.BASE_URL}/thumbnail/${data.value.image}`
 
 useHead({
   title: data.value.title,
@@ -54,10 +54,10 @@ useHead({
       content: data.value.description,
     },
     { hid: 'og:url', property: 'og:url', content: `${config.public.BASE_URL}${path}` },
-    { hid: "og:image", property: "og:image", content: img },
+    // { hid: "og:image", property: "og:image", content: img },
     { hid: 'twitter:title', property: 'twitter:title', content: data.value.title },
     { hid: 'twitter:description	', property: 'twitter:description	', content: data.value.description },
-    { hid: 'twitter:image', property: 'twitter:image', content: img },
+    // { hid: 'twitter:image', property: 'twitter:image', content: img },
     { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
   ]
 })
