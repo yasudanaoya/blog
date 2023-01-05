@@ -2960,6 +2960,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.7":
+  version: 1.11.7
+  resolution: "dayjs@npm:1.11.7"
+  checksum: 5003a7c1dd9ed51385beb658231c3548700b82d3548c0cfbe549d85f2d08e90e972510282b7506941452c58d32136d6362f009c77ca55381a09c704e9f177ebb
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.2.0":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -8195,6 +8202,7 @@ __metadata:
     "@vueuse/core": ^9.6.0
     "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
+    dayjs: ^1.11.7
     nuxt: 3.0.0-rc.13
     postcss-custom-properties: ^12.1.11
     pug: ^3.0.2

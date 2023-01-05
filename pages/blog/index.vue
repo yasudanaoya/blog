@@ -8,6 +8,7 @@ div(class="container mx-auto px-4 py-5")
       :icon="d.icon"
       :title="d.title"
       :tags="d.tags"
+      :date="d.date"
     )
 
 </template>

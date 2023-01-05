@@ -14,6 +14,9 @@ nuxt-link(
         class="text-base md:text-lx"
       )
         | {{ props.title }}
+      span.mr-2(
+        class="dark:text-gray-400"
+      ) {{ dayjs(props.date).format('YYYY/MM/DD') }}
       span.badge.badge-outline.box-content.inline-block.rounded-full.font-semibold.mx-1.px-2.py-1(
         v-for="tag in props.tags"
         class="text-xs md:text-sm"
@@ -22,11 +25,14 @@ nuxt-link(
 </template>
 
 <script setup lang="ts">
+import dayjs from 'dayjs'
+
 const props = defineProps({
   title: String,
   tags: Array<String>,
   to: String,
   icon: String,
+  date: Date,
 })
 
 </script>
