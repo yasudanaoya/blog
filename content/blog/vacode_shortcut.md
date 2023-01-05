@@ -1,10 +1,9 @@
 ---
 title: 知り合いに教えたら、知られてなかった便利なショートカット
-description: VSCode で書いてて、使ってて便利だけどあんまり知られてなかったなって感じたショートカットをいくつか紹介
 date: 2021-12-07
-image: VSCode.png
 tags:
   - VSCode
+icon: 🤓
 ---
 
 ## 注意書き

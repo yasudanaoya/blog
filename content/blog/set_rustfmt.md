@@ -1,12 +1,11 @@
 ---
 title: Neovim で Rust の開発ができるようにした(format できるようにした)
-description: nvim-lspconfig を使って Rust の LSP が動くようにしました。
 date: 2022-07-16
-image: crab.jpeg
 tags:
   - Neovim
   - LSP
   - Rust
+icon: 🦀
 ---
 ## 動機
 

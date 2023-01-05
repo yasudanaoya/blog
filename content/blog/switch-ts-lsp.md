@@ -1,11 +1,10 @@
 ---
 title: (nvim-lspconfig を使用) denops と tsserver を切り替える
-description: denops と tsserver が同じ ts ファイル開いた時に、どっち使えばええんや！ってのを綺麗にしました
 date: 2022-06-29
-image: Neovim@8.png
 tags:
   - Neovim
   - LSP
+icon: 🎚️
 ---
 
 n番煎じである

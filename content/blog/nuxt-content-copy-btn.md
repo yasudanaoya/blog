@@ -1,11 +1,10 @@
 ---
 title: Nuxt Content で作ってるブログにある、コードブロックの内容をコピーできるボタンを用意した
-description: nuxt/content v2 と vueuse を使って、コードブロックの内容をコピーできるボタンを用意した
 date: 2022-09-10
-image: ihou_copy_software.png
 tags:
   - Nuxt Content
   - vueuse
+icon: 📎
 ---
 
 Qiita とかを見てると、コードブロックの内容をコピーできるボタンが右上にくっついてることが多い。

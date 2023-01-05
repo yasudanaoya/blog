@@ -1,10 +1,9 @@
 ---
 title: Object の value を rename して取り出す
-description: 今更知ったシリーズ
 date: 2022-06-13
-image: JavaScript.png
 tags:
   - JavaScript
+icon: 💼
 ---
 ## rename
 

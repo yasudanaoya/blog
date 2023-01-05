@@ -1,13 +1,12 @@
 <template lang="pug">
 div(class="container mx-auto px-4 py-5")
-  div(class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4")
-    card(
+  div(class="mx-auto")
+    card.my-5(
       v-for="d in data"
       :to="d._path"
       :key="d._path"
-      :src="d.image"
+      :icon="d.icon"
       :title="d.title"
-      :desc="d.description"
       :tags="d.tags"
     )
 
