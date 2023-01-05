@@ -1,6 +1,6 @@
 ---
 title: 2022年のまとめ
-date: 2023-01-5
+date: 2023-01-6
 tags:
   - Summary
 icon: 🎍
