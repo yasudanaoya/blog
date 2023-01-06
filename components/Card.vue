@@ -32,7 +32,7 @@ const props = defineProps({
   tags: Array<String>,
   to: String,
   icon: String,
-  date: Date,
+  date: String,
 })
 
 </script>
