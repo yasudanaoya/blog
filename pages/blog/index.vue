@@ -13,7 +13,7 @@ div(class="container mx-auto px-4 py-5")
     .btn-group
       //- button.btn.btn-active
       button.btn(
-        v-for="i in articles.length/10"
+        v-for="i in articles.length/PER_PAGE"
         :key="i"
         @click="onClick(i)"
         :class="{ 'btn-active': current === i - 1}"
@@ -53,10 +53,11 @@ const articles = computed(() => {
   })
 })
 
+const PER_PAGE = 5
 const current = ref(0)
 const currentArticles = computed(() => {
-  const start = current.value === 0 ? 0 : current.value * 10
-  const end = current.value * 10 + 10
+  const start = current.value === 0 ? 0 : current.value * PER_PAGE
+  const end = current.value * PER_PAGE + PER_PAGE
   if (end > articles.value.length) {
     return articles.value.slice(current.value)
   }
