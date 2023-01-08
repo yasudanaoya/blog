@@ -2,7 +2,7 @@
 div(class="container mx-auto px-4 py-5")
   div(class="mx-auto")
     card.my-5(
-      v-for="d in articles"
+      v-for="d in currentArticles"
       :to="d._path"
       :key="d._path"
       :icon="d.icon"
@@ -10,6 +10,14 @@ div(class="container mx-auto px-4 py-5")
       :tags="d.tags"
       :date="d.date"
     )
+    .btn-group
+      //- button.btn.btn-active
+      button.btn(
+        v-for="i in articles.length/10"
+        :key="i"
+        @click="onClick(i)"
+        :class="{ 'btn-active': current === i - 1}"
+      ) {{ i }}
 
 </template>
 
@@ -44,6 +52,20 @@ const articles = computed(() => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
 })
+
+const current = ref(0)
+const currentArticles = computed(() => {
+  const start = current.value === 0 ? 0 : current.value * 10
+  const end = current.value * 10 + 10
+  if (end > articles.value.length) {
+    return articles.value.slice(current.value)
+  }
+  return articles.value.slice(start, end)
+})
+
+const onClick = (i: number) => {
+  current.value = i - 1
+}
 
 onMounted(() => {
   if (contents.value && !contents.value.length) {
