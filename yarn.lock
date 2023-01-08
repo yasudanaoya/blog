@@ -1563,7 +1563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:9.6.0, @vueuse/core@npm:^9.6.0":
+"@vueuse/core@npm:9.6.0":
   version: 9.6.0
   resolution: "@vueuse/core@npm:9.6.0"
   dependencies:
@@ -1587,6 +1587,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^9.10.0":
+  version: 9.10.0
+  resolution: "@vueuse/core@npm:9.10.0"
+  dependencies:
+    "@types/web-bluetooth": ^0.0.16
+    "@vueuse/metadata": 9.10.0
+    "@vueuse/shared": 9.10.0
+    vue-demi: "*"
+  checksum: 9e3b0c0baa1e3daf3ae508f76acf4e73ec80a2089d420f5de7c203e9fecd8cd4596a5e4635bbf09a762e0bba022f26806ee23b69d5d01a5d0e4b76e2ad2878a4
+  languageName: node
+  linkType: hard
+
 "@vueuse/head@npm:~1.0.0-rc.14":
   version: 1.0.0-rc.14
   resolution: "@vueuse/head@npm:1.0.0-rc.14"
@@ -1597,6 +1609,13 @@ __metadata:
   peerDependencies:
     vue: ">=2.7 || >=3"
   checksum: 829d7fe00b82155f69460717c022883b30913c720af917fb3cafe2a432c135cc8fcd117ac1abbcb7598d17a60bc57fba479af8096a53f697ee35be7dbc1687e6
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:9.10.0":
+  version: 9.10.0
+  resolution: "@vueuse/metadata@npm:9.10.0"
+  checksum: ef9b4970cc1795e197279b59cfd82c7475323c17ae02701e5a6be26df1258330d4fafb7c05d005dfa7af97277509a8589d62467925319e1c5c17715805554bb7
   languageName: node
   linkType: hard
 
@@ -1626,6 +1645,15 @@ __metadata:
   peerDependencies:
     nuxt: ^3.0.0-rc.9
   checksum: 4f91b3d16af5f0bd20d36b6b2a44bc6e9f61058727d5144852f7558cc4786045688d317770e981a6986e8de5dae8fa11c674849c75377f56c5bec07d4d31d809
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:9.10.0":
+  version: 9.10.0
+  resolution: "@vueuse/shared@npm:9.10.0"
+  dependencies:
+    vue-demi: "*"
+  checksum: 1481ad7273eb8835a42fd49805d32ae97465188d260ddb28fdffebda7bedea5943bf49c3bd128121b32719307eaf1cb69b37b60fa1195c10a555e7aec3d78c22
   languageName: node
   linkType: hard
 
@@ -8199,7 +8227,7 @@ __metadata:
     "@tailwindcss/typography": ^0.5.8
     "@volar/vue-language-plugin-pug": ^1.0.16
     "@vueuse/components": ^9.9.0
-    "@vueuse/core": ^9.6.0
+    "@vueuse/core": ^9.10.0
     "@vueuse/nuxt": ^9.6.0
     daisyui: ^2.42.1
     dayjs: ^1.11.7
