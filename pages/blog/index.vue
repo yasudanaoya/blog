@@ -10,14 +10,14 @@ div(class="container mx-auto px-4 py-5")
       :tags="d.tags"
       :date="d.date"
     )
-    .btn-group
-      //- button.btn.btn-active
-      button.btn(
-        v-for="i in articles.length/PER_PAGE"
-        :key="i"
-        @click="onClick(i)"
-        :class="{ 'btn-active': current === i - 1}"
-      ) {{ i }}
+    .flex.justify-center
+      .btn-group
+        button.btn(
+          v-for="i in articles.length/PER_PAGE"
+          :key="i"
+          @click="onClick(i)"
+          :class="{ 'btn-active': current === i - 1}"
+        ) {{ i }}
 
 </template>
 
