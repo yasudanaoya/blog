@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   publicRuntimeConfig: {
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_KEY: process.env.SUPABASE_KEY,
+    QIITA_TOKEN: process.env.QIITA_TOKEN,
     BASE_URL:
       process.env.NODE_ENV === "production"
         ? "https://yanskun.com/"
