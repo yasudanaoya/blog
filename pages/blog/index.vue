@@ -28,12 +28,7 @@ useHead({
 
 const { data: contents } = await useAsyncData('blog', () => queryContent('/blog').sort({ date: -1 }).find())
 
-const runtimeConfig = useRuntimeConfig()
-const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items?per_page=100', {
-  headers: {
-    Authorization: `Bearer ${runtimeConfig.QIITA_TOKEN}`
-  },
-}).then((res) => {
+const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items?per_page=100').then((res) => {
   const qiitaData = res.data.value as any[]
   return qiitaData.map((d) => {
     return {
@@ -47,6 +42,9 @@ const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items?per_p
 })
 
 const articles = computed(() => {
+  if (!contents.value) {
+    return []
+  }
   const data = [...contents.value, ...qiita]
   return data.sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
