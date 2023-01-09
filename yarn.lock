@@ -844,24 +844,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "@nuxt/content@npm:2.2.2"
+"@nuxt/content@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@nuxt/content@npm:2.3.0"
   dependencies:
-    "@nuxt/kit": ^3.0.0-rc.13
+    "@nuxt/kit": v3.0.0
     consola: ^2.15.3
     defu: ^6.1.1
-    destr: ^1.2.1
+    destr: ^1.2.2
     detab: ^3.0.2
     html-tags: ^3.2.0
     json5: ^2.2.1
     knitwork: ^1.0.0
-    listhen: ^1.0.0
+    listhen: ^1.0.1
     mdast-util-to-hast: ^12.2.4
     mdurl: ^1.0.1
     ohash: ^1.0.0
     pathe: ^1.0.0
-    property-information: ^6.1.1
+    property-information: ^6.2.0
     rehype-external-links: ^2.0.1
     rehype-raw: ^6.1.1
     rehype-slug: ^5.1.0
@@ -869,22 +869,22 @@ __metadata:
     rehype-sort-attributes: ^4.0.0
     remark-emoji: ^3.0.2
     remark-gfm: ^3.0.1
-    remark-mdc: ^1.1.1
+    remark-mdc: ^1.1.3
     remark-parse: ^10.0.1
     remark-rehype: ^10.1.0
     remark-squeeze-paragraphs: ^5.0.1
     scule: ^1.0.0
     shiki-es: ^0.1.2
     slugify: ^1.6.5
-    socket.io-client: ^4.5.3
-    ufo: ^1.0.0
+    socket.io-client: ^4.5.4
+    ufo: ^1.0.1
     unified: ^10.1.2
     unist-builder: ^3.0.0
     unist-util-position: ^4.0.3
     unist-util-visit: ^4.1.1
-    unstorage: ^1.0.0
+    unstorage: ^1.0.1
     ws: ^8.11.0
-  checksum: 3f955f32c99c1c87ede44bd8014ab73811e61d92314ac6dd297ec4a258d21843cfe2271fe318780dfcd57a5d943df79c673a8764c82ec28bb09aadf344aaa879
+  checksum: 1812a5f2f52949821f1ff69fa098b4480cbc7c5951c2c41876fcbf58414a978d5e7be51c70b8c1912321367b15329f2c8cbb1a7697b6602c5c97e5b455be369d
   languageName: node
   linkType: hard
 
@@ -895,7 +895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.0.0, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.0.0-rc.13, @nuxt/kit@npm:^3.0.0-rc.14":
+"@nuxt/kit@npm:3.0.0, @nuxt/kit@npm:^3.0.0, @nuxt/kit@npm:^3.0.0-rc.13, @nuxt/kit@npm:^3.0.0-rc.14, @nuxt/kit@npm:v3.0.0":
   version: 3.0.0
   resolution: "@nuxt/kit@npm:3.0.0"
   dependencies:
@@ -3384,6 +3384,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"destr@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "destr@npm:1.2.2"
+  checksum: 3906b49513a64d8442dacb8b798c59d66257ded4ccd2ef1d99b58644d4aa6b30ca61f9a9823d3dcbc78b4db812596e53e85e499f39a498b3b165a045b5228b2b
+  languageName: node
+  linkType: hard
+
 "destroy@npm:1.2.0, destroy@npm:^1.0.4":
   version: 1.2.0
   resolution: "destroy@npm:1.2.0"
@@ -5767,7 +5774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"listhen@npm:^1.0.0":
+"listhen@npm:^1.0.0, listhen@npm:^1.0.1":
   version: 1.0.1
   resolution: "listhen@npm:1.0.1"
   dependencies:
@@ -8147,10 +8154,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"property-information@npm:^6.0.0, property-information@npm:^6.1.1":
+"property-information@npm:^6.0.0":
   version: 6.1.1
   resolution: "property-information@npm:6.1.1"
   checksum: 654b1e5c3578e1d522bd22b7cf48881f5054789969ddbefea22e5359805fda5dbf0c5ef76bb26516da26fedac8752587ddc4c8f3b9e16bc0c6e7feb8b6086864
+  languageName: node
+  linkType: hard
+
+"property-information@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "property-information@npm:6.2.0"
+  checksum: 23afce07ba821cbe7d926e63cdd680991961c82be4bbb6c0b17c47f48894359c1be6e51cd74485fc10a9d3fd361b475388e1e39311ed2b53127718f72aab1955
   languageName: node
   linkType: hard
 
@@ -8523,7 +8537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-mdc@npm:^1.1.1":
+"remark-mdc@npm:^1.1.3":
   version: 1.1.3
   resolution: "remark-mdc@npm:1.1.3"
   dependencies:
@@ -8769,7 +8783,7 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": ^6.2.1
     "@fortawesome/vue-fontawesome": prerelease
     "@netlify/plugin-sitemap": ^0.8.1
-    "@nuxt/content": ^2.2.2
+    "@nuxt/content": ^2.3.0
     "@nuxtjs/supabase": ^0.3.0
     "@nuxtjs/tailwindcss": ^6.1.3
     "@tailwindcss/aspect-ratio": ^0.4.2
@@ -9087,19 +9101,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socket.io-client@npm:^4.5.3":
-  version: 4.5.3
-  resolution: "socket.io-client@npm:4.5.3"
+"socket.io-client@npm:^4.5.4":
+  version: 4.5.4
+  resolution: "socket.io-client@npm:4.5.4"
   dependencies:
     "@socket.io/component-emitter": ~3.1.0
     debug: ~4.3.2
     engine.io-client: ~6.2.3
-    socket.io-parser: ~4.2.0
-  checksum: ebd2dbddece9e8b5926e8f20ed3d0620bdb07de70ece8fb6fa786690f543f420e2ea784a37e46ac470af3cc11f0199d9ecabd8f30eaf63c80974c3eaa7e8a9b0
+    socket.io-parser: ~4.2.1
+  checksum: 8320ce4a96e9c28318b17037e412746b1d612cfba653c3c321c0e49042f0be9aeb8de67d5861e45e9aad32407bb4dd204bfe199565d78d5320aaf65253371b7f
   languageName: node
   linkType: hard
 
-"socket.io-parser@npm:~4.2.0":
+"socket.io-parser@npm:~4.2.1":
   version: 4.2.1
   resolution: "socket.io-parser@npm:4.2.1"
   dependencies:
@@ -9695,6 +9709,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ufo@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "ufo@npm:1.0.1"
+  checksum: 63024876f21b7cc44267255a8043062046d3215e09212bd682787a13ccf1e0c5d23f7686a7f1bc7ac9f34c7e8a88100af234f42b509db50f17ce638af6ac87cc
+  languageName: node
+  linkType: hard
+
 "ultrahtml@npm:^1.0.0":
   version: 1.2.0
   resolution: "ultrahtml@npm:1.2.0"
@@ -9976,7 +9997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unstorage@npm:^1.0.0, unstorage@npm:^1.0.1":
+"unstorage@npm:^1.0.1":
   version: 1.0.1
   resolution: "unstorage@npm:1.0.1"
   dependencies:
