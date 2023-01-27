@@ -19,7 +19,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@volar/vue-language-plugin-pug": "^1.0.24",
-    "@vueuse/components": "^9.9.0",
+    "@vueuse/components": "^9.11.1",
     "@vueuse/core": "^9.10.0",
     "@vueuse/nuxt": "^9.6.0",
     "daisyui": "^2.46.1",
