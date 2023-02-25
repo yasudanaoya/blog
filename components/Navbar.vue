@@ -46,9 +46,11 @@ const isActive = (path: string) => {
   return route.path.match(new RegExp(path))
 }
 
-const btn = ref(null)
+const btn = ref<HTMLLabelElement>()
 const click = () => {
-  btn.value.click()
+  if (btn.value) {
+    btn.value.click()
+  }
 }
 defineExpose({
   click,

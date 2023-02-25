@@ -51,8 +51,10 @@ const props = defineProps({
   }
 })
 
-const navbar = ref(null)
+const navbar = ref<HTMLDivElement>()
 const click = () => {
-  navbar.value.click()
+  if (navbar.value) {
+    navbar.value.click()
+  }
 }
 </script>
