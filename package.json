@@ -23,7 +23,7 @@
     "@vueuse/nuxt": "^9.6.0",
     "daisyui": "^2.46.1",
     "nuxt": "3.2.2",
-    "postcss-custom-properties": "^12.1.11",
+    "postcss-custom-properties": "^13.1.4",
     "pug": "^3.0.2",
     "rss": "^1.2.2",
     "sass": "1.57.1",
