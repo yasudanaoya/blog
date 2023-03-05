@@ -5,7 +5,7 @@ drawer(:tabs="tabs" :links="links")
     div(class="mockup-code w-1/2")
       pre(data-prefix="$")
         code {{ `ls ~/${requestValue}` }}
-      pre.bg-error.text-error-content(data-prefix=">")
+      pre.w-fit.bg-error.text-error-content(data-prefix=">")
         code {{ `ls: ~/${requestValue}: No such file or directory` }}
   app-footer(:links="links")
 </template>
@@ -14,4 +14,7 @@ drawer(:tabs="tabs" :links="links")
 import { tabs, links } from '@/assets/scripts/link'
 const { path } = useRoute()
 const requestValue = path.replace('/', '')
+if (requestValue === '~') {
+  clearError({ redirect: '/' })
+}
 </script>
