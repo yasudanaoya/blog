@@ -21,7 +21,7 @@
     "@vueuse/components": "^9.9.0",
     "@vueuse/core": "^9.10.0",
     "@vueuse/nuxt": "^9.6.0",
-    "daisyui": "^2.46.1",
+    "daisyui": "^2.51.5",
     "nuxt": "3.2.2",
     "postcss-custom-properties": "^12.1.11",
     "pug": "^3.0.2",
