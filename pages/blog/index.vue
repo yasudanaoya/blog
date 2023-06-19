@@ -28,7 +28,7 @@ useHead({
 
 const { data: contents } = await useAsyncData('blog', () => queryContent('/blog').sort({ date: -1 }).find())
 
-const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items?per_page=100').then((res) => {
+const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items').then((res) => {
   const qiitaData = res.data.value as any[]
   return qiitaData.map((d) => {
     return {
@@ -41,11 +41,24 @@ const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items?per_p
   })
 })
 
+const zenn = await useFetch('https://zenn.dev/api/articles?username=yanskun').then((res) => {
+  const { articles: zennData } = res.data.value as { articles: any[] }
+  return zennData.map((d) => {
+    return {
+      _path: `https://zenn.dev${d.path}`,
+      title: d.title,
+      date: d.published_at,
+      tags: [d.article_type],
+      icon: d.emoji,
+    }
+  })
+})
+
 const articles = computed(() => {
   if (!contents.value) {
     return []
   }
-  const data = [...contents.value, ...qiita]
+  const data = [...contents.value, ...qiita, ...zenn]
   return data.sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
