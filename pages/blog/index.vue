@@ -13,7 +13,7 @@ div(class="container mx-auto px-4 py-5")
     .flex.justify-center
       .btn-group
         button.btn(
-          v-for="i in articles.length/PER_PAGE"
+          v-for="i in Math.ceil(articles.length / PER_PAGE)"
           :key="i"
           @click="onClick(i)"
           :class="{ 'btn-active': current === i - 1}"
@@ -28,7 +28,7 @@ useHead({
 
 const { data: contents } = await useAsyncData('blog', () => queryContent('/blog').sort({ date: -1 }).find())
 
-const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items').then((res) => {
+const qiita = await useFetch('/api/qiita').then((res) => {
   const qiitaData = res.data.value as any[]
   return qiitaData.map((d) => {
     return {
@@ -41,7 +41,7 @@ const qiita = await useFetch('https://qiita.com/api/v2/users/yanskun/items').the
   })
 })
 
-const zenn = await useFetch('https://zenn.dev/api/articles?username=yanskun').then((res) => {
+const zenn = await useFetch('/api/zenn').then((res) => {
   const { articles: zennData } = res.data.value as { articles: any[] }
   return zennData.map((d) => {
     return {
@@ -69,9 +69,6 @@ const current = ref(0)
 const currentArticles = computed(() => {
   const start = current.value === 0 ? 0 : current.value * PER_PAGE
   const end = current.value * PER_PAGE + PER_PAGE
-  if (end > articles.value.length) {
-    return articles.value.slice(current.value)
-  }
   return articles.value.slice(start, end)
 })
 
