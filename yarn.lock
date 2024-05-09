@@ -9691,7 +9691,7 @@ __metadata:
     postcss-custom-properties: ^13.1.5
     pug: ^3.0.2
     rss: ^1.2.2
-    sass: 1.62.1
+    sass: 1.77.0
     sitemap: ^7.1.1
     vue-gtag: ^2.0.1
     vue3-smooth-scroll: ^0.8.1
@@ -9745,16 +9745,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.62.1":
-  version: 1.62.1
-  resolution: "sass@npm:1.62.1"
+"sass@npm:1.77.0":
+  version: 1.77.0
+  resolution: "sass@npm:1.77.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 1b1b3584b38a63dd94156b65f13b90e3f84b170a38c3d5e3fa578b7a32a37aeb349b4926b0eaf9448d48e955e86b1ee01b13993f19611dad8068af07a607c13b
+  checksum: 684b70e58ab2077b2ed90c5ae0e3bfed59fb6f362e4cbae2514c6bef57b013a0a1012d1c199b9d9d362fe52e37cddf12c6d843e78d3402ba5ed6fcf29b98e28c
   languageName: node
   linkType: hard
 
