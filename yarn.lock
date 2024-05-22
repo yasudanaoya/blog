@@ -747,12 +747,12 @@ __metadata:
   linkType: hard
 
 "@fortawesome/vue-fontawesome@npm:^3.0.3":
-  version: 3.0.6
-  resolution: "@fortawesome/vue-fontawesome@npm:3.0.6"
+  version: 3.0.8
+  resolution: "@fortawesome/vue-fontawesome@npm:3.0.8"
   peerDependencies:
     "@fortawesome/fontawesome-svg-core": ~1 || ~6
     vue: ">= 3.0.0 < 4"
-  checksum: 0ae311ed998660ae7b460ec03e5fd5f64268dd841ac000bb67172211fa3f36b2df46d6ffb95de608f716664ebc07048a17d5da8b4f93f2ccddc8a054b410bcaf
+  checksum: 3b3e34ecec6e997f6580b590eff2cec72f99bca7f83f9207fea4ae8217f5948bde7f28cde5ed95ed210d46b6f4a131fa28d4292d46ab76a9d4dd0a5d28283033
   languageName: node
   linkType: hard
 
