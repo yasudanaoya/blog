@@ -2767,7 +2767,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/components@npm:^10.0.0, @vueuse/components@npm:^10.9.0":
+"@vueuse/components@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "@vueuse/components@npm:10.10.0"
+  dependencies:
+    "@vueuse/core": 10.10.0
+    "@vueuse/shared": 10.10.0
+    vue-demi: ">=0.14.7"
+  checksum: 05139b612fc2b67d439adb978a18233c07fd4415f13766fc68164ff553eea544d19494c4c8c8c8fafdf3832c17312d62d8d56451ce865c2af8554306e852f083
+  languageName: node
+  linkType: hard
+
+"@vueuse/components@npm:^10.9.0":
   version: 10.9.0
   resolution: "@vueuse/components@npm:10.9.0"
   dependencies:
@@ -9671,7 +9682,7 @@ __metadata:
     "@tailwindcss/aspect-ratio": ^0.4.2
     "@tailwindcss/typography": ^0.5.8
     "@volar/vue-language-plugin-pug": ^1.6.5
-    "@vueuse/components": ^10.0.0
+    "@vueuse/components": ^10.10.0
     "@vueuse/core": ^10.0.0
     "@vueuse/nuxt": ^10.9.0
     daisyui: ^2.51.6
