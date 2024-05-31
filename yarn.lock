@@ -2768,13 +2768,13 @@ __metadata:
   linkType: hard
 
 "@vueuse/components@npm:^10.0.0, @vueuse/components@npm:^10.9.0":
-  version: 10.9.0
-  resolution: "@vueuse/components@npm:10.9.0"
+  version: 10.10.0
+  resolution: "@vueuse/components@npm:10.10.0"
   dependencies:
-    "@vueuse/core": 10.9.0
-    "@vueuse/shared": 10.9.0
+    "@vueuse/core": 10.10.0
+    "@vueuse/shared": 10.10.0
     vue-demi: ">=0.14.7"
-  checksum: b3b44072b477753eee99c48951daef41e3d030da74ea9f8aa4cefaa7fe88439783ec12693d90f4350b8564b3067e139ed39a22ac63709b1fdba7c3e3657db31b
+  checksum: 05139b612fc2b67d439adb978a18233c07fd4415f13766fc68164ff553eea544d19494c4c8c8c8fafdf3832c17312d62d8d56451ce865c2af8554306e852f083
   languageName: node
   linkType: hard
 
