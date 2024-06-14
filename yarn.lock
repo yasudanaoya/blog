@@ -2778,7 +2778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.10.0, @vueuse/core@npm:^10.0.0, @vueuse/core@npm:^10.9.0":
+"@vueuse/core@npm:10.10.0, @vueuse/core@npm:^10.9.0":
   version: 10.10.0
   resolution: "@vueuse/core@npm:10.10.0"
   dependencies:
@@ -2790,7 +2790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.11.0":
+"@vueuse/core@npm:10.11.0, @vueuse/core@npm:^10.11.0":
   version: 10.11.0
   resolution: "@vueuse/core@npm:10.11.0"
   dependencies:
@@ -9700,7 +9700,7 @@ __metadata:
     "@tailwindcss/typography": ^0.5.8
     "@volar/vue-language-plugin-pug": ^1.6.5
     "@vueuse/components": ^10.0.0
-    "@vueuse/core": ^10.0.0
+    "@vueuse/core": ^10.11.0
     "@vueuse/nuxt": ^10.9.0
     daisyui: ^2.51.6
     dayjs: ^1.11.7
