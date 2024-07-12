@@ -20,7 +20,7 @@
     "@vueuse/components": "^10.0.0",
     "@vueuse/core": "^10.0.0",
     "@vueuse/nuxt": "^10.11.0",
-    "daisyui": "^2.51.6",
+    "daisyui": "^4.0.0",
     "nuxt": "^3.12.2",
     "postcss-custom-properties": "^13.1.5",
     "pug": "^3.0.2",
