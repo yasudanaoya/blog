@@ -85,17 +85,22 @@ const histories: History[] = [
   {
     title: 'セラク',
     term: '2017/4 ~ 2018/9',
-    body: `Infrastructure`
+    body: `-`
   },
   {
     title: 'シアトルコンサルティング',
     term: '2018/10 ~ 2020/11',
-    body: `WEB Application`
+    body: `Frontend`
   },
   {
     title: 'WED',
-    term: '2020/12 ~',
-    body: `WEB Application`
+    term: '2020/12 ~ 2024/6',
+    body: `Frontend / Backend \nEngineering Manager`
+  },
+  {
+    title: 'Finswer',
+    term: '2024/7 ~',
+    body: `Frontend`
   },
 ]
 
@@ -105,9 +110,9 @@ type Item = {
 }
 
 const items: Item[] = [
-  { name: 'Keyboard', value: 'HHKB' },
+  { name: 'Keyboard', value: 'HHKB Studio' },
   { name: 'Editor', value: ['Neovim', 'VSCode'] },
-  { name: 'Terminal', value: ['iTeam2', 'Tmux'] },
+  { name: 'Terminal', value: ['Alacritty', 'Tmux'] },
   { name: 'Shell', value: 'zsh' },
   { name: 'PC', value: 'macOS' },
 ]
@@ -131,10 +136,9 @@ const skills: Skill[] = [
   { name: 'Vue.js', value: 4 },
   { name: 'Nuxt.js', value: 4 },
   { name: 'React', value: 3 },
+  { name: 'Next.js', value: 3 },
   { name: 'Go', value: 3 },
   { name: 'Lua', value: 2 },
-  { name: 'Ruby', value: 1 },
-  { name: 'Flutter', value: 1 },
   { name: 'Rust', value: 1 },
 ]
 </script>
