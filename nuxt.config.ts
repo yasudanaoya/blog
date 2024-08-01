@@ -29,23 +29,23 @@ export default defineNuxtConfig({
   },
 
   content: {
-    highlight: {
-      theme: "nord",
-      preload: [
-        "bash",
-        "diff",
-        "json",
-        "lua",
-        "js",
-        "ts",
-        "css",
-        "shell",
-        "html",
-        "md",
-        "vue",
-        "yaml",
-      ],
-    },
+    // highlight: {
+    //   theme: "nord",
+    //   preload: [
+    //     "bash",
+    //     "diff",
+    //     "json",
+    //     "lua",
+    //     "js",
+    //     "ts",
+    //     "css",
+    //     "shell",
+    //     "html",
+    //     "md",
+    //     "vue",
+    //     "yaml",
+    //   ],
+    // },
   },
 
   generate: {
