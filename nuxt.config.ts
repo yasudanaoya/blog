@@ -1,7 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
-
   components: true,
 
   runtimeConfig: {
@@ -18,7 +17,7 @@ export default defineNuxtConfig({
     "@fortawesome/fontawesome-svg-core/styles.css",
   ],
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@vueuse/nuxt", "@nuxt/image"],
 
   build: {
     transpile: [
@@ -58,4 +57,6 @@ export default defineNuxtConfig({
       routes: ["/sitemap.xml", "/rss.xml"],
     },
   },
+
+  compatibilityDate: "2024-08-01",
 });
