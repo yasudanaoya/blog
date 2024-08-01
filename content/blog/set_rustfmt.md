@@ -1,5 +1,5 @@
 ---
-title: Neovim で Rust の開発ができるようにした(format できるようにした)
+title: Neovim で Rust の開発ができるようにした
 date: 2022-07-16
 tags:
   - Neovim
