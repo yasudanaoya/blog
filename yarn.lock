@@ -3023,7 +3023,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.11.1, @vueuse/core@npm:^10.0.0, @vueuse/core@npm:^10.11.0":
+"@vueuse/core@npm:10.11.1, @vueuse/core@npm:^10.11.0":
   version: 10.11.1
   resolution: "@vueuse/core@npm:10.11.1"
   dependencies:
@@ -3032,6 +3032,18 @@ __metadata:
     "@vueuse/shared": "npm:10.11.1"
     vue-demi: "npm:>=0.14.8"
   checksum: 10c0/6a974c1510ce84e652e3d180a4f4373e37e59a5ec025a7a8cec7f144a4ccff25dbdd82e3143ffb057323f467a1076b39da30953981e822c4bd41a7841121afee
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@vueuse/core@npm:11.0.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.20"
+    "@vueuse/metadata": "npm:11.0.0"
+    "@vueuse/shared": "npm:11.0.0"
+    vue-demi: "npm:>=0.14.10"
+  checksum: 10c0/82154d0217b9f025a12f88fc04b70094027fac2dfcf032600e4c62aa36e97dde7f8867c9388714883ee41c479e3034cbb1dd5e32fdd5d40233124b35b2de090a
   languageName: node
   linkType: hard
 
@@ -3056,6 +3068,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/metadata@npm:11.0.0":
+  version: 11.0.0
+  resolution: "@vueuse/metadata@npm:11.0.0"
+  checksum: 10c0/e729d729e1bbf2366e8571299aa3780585c5d7bd02bbdf55a245f282893b847743fab4d121cddfb62ee1df1a5220fb41266c6ce26d0fa9db741be51b5bfe0543
+  languageName: node
+  linkType: hard
+
 "@vueuse/nuxt@npm:^10.11.0":
   version: 10.11.1
   resolution: "@vueuse/nuxt@npm:10.11.1"
@@ -3077,6 +3096,15 @@ __metadata:
   dependencies:
     vue-demi: "npm:>=0.14.8"
   checksum: 10c0/22c4f04be8fdb5e95535cf20f13956fc1f3707540f3730282905e6f9b24f314ada28292e82f4401d88b2c1fcf7fc7203011260958f517abc2b756779243147e3
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:11.0.0":
+  version: 11.0.0
+  resolution: "@vueuse/shared@npm:11.0.0"
+  dependencies:
+    vue-demi: "npm:>=0.14.10"
+  checksum: 10c0/a13af53c17bd98c2700e3849e7f9c2aad0ff3639e30416a427cdc34e1d21d0d59bb1e486f08b90060b73ab555d24139b563f6c15fa7a272df159e98b561b5b6c
   languageName: node
   linkType: hard
 
@@ -9651,7 +9679,7 @@ __metadata:
     "@tailwindcss/typography": "npm:^0.5.8"
     "@volar/vue-language-plugin-pug": "npm:^1.6.5"
     "@vueuse/components": "npm:^10.0.0"
-    "@vueuse/core": "npm:^10.0.0"
+    "@vueuse/core": "npm:^11.0.0"
     "@vueuse/nuxt": "npm:^10.11.0"
     daisyui: "npm:^2.51.6"
     dayjs: "npm:^1.11.7"
@@ -11395,6 +11423,22 @@ __metadata:
   dependencies:
     ufo: "npm:^1.5.3"
   checksum: 10c0/a3c4b73b4ac0e919632543b6daad6067c2aed03a5805f72730f0c1a52a40f80d122dfa33383c1c466f69df77b5565b52704409efb42e4244243a241ab0392bef
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:>=0.14.10":
+  version: 0.14.10
+  resolution: "vue-demi@npm:0.14.10"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: 10c0/a9ed8712fa36d01bc13c39757f95f30cebf42d557b99e94bff86d8660c81f2911b41220f7affc023d1ffcc19e13999e4a83019991e264787cca2c616e83aea48
   languageName: node
   linkType: hard
 
