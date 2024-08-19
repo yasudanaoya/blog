@@ -3035,7 +3035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^11.0.0":
+"@vueuse/core@npm:11.0.0, @vueuse/core@npm:^11.0.0":
   version: 11.0.0
   resolution: "@vueuse/core@npm:11.0.0"
   dependencies:
@@ -3087,6 +3087,21 @@ __metadata:
   peerDependencies:
     nuxt: ^3.0.0
   checksum: 10c0/f6d825ffefe88851cbf3da9d317343eccb88547c4e054005b7a3b0bf184963765766dea177256ec2ad27553293c9bc40b9af47d2c4a581d1eb916d54b3d75df6
+  languageName: node
+  linkType: hard
+
+"@vueuse/nuxt@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@vueuse/nuxt@npm:11.0.0"
+  dependencies:
+    "@nuxt/kit": "npm:^3.12.4"
+    "@vueuse/core": "npm:11.0.0"
+    "@vueuse/metadata": "npm:11.0.0"
+    local-pkg: "npm:^0.5.0"
+    vue-demi: "npm:>=0.14.10"
+  peerDependencies:
+    nuxt: ^3.0.0
+  checksum: 10c0/6d6cf42689bfaab3e3e7a0a1ebd50ac564199d5bc8800ace295f7d1f3ce7fc96afc63d37b327e024440c67b076ff126c1fa51b043ae93730d9642dfe8defb691
   languageName: node
   linkType: hard
 
@@ -9680,7 +9695,7 @@ __metadata:
     "@volar/vue-language-plugin-pug": "npm:^1.6.5"
     "@vueuse/components": "npm:^10.0.0"
     "@vueuse/core": "npm:^11.0.0"
-    "@vueuse/nuxt": "npm:^10.11.0"
+    "@vueuse/nuxt": "npm:^11.0.0"
     daisyui: "npm:^2.51.6"
     dayjs: "npm:^1.11.7"
     nuxt: "npm:^3.12.2"
