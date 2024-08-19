@@ -3012,14 +3012,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/components@npm:^10.0.0":
-  version: 10.11.1
-  resolution: "@vueuse/components@npm:10.11.1"
+"@vueuse/components@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@vueuse/components@npm:11.0.0"
   dependencies:
-    "@vueuse/core": "npm:10.11.1"
-    "@vueuse/shared": "npm:10.11.1"
-    vue-demi: "npm:>=0.14.8"
-  checksum: 10c0/5c3616cc14c095a989b245ee51fff88332e01805954da4db21b92526d99cbabf87dffc2e1121da50dc3e4f0e191988925507e4f28f8489c11e9bb8b997a5d279
+    "@vueuse/core": "npm:11.0.0"
+    "@vueuse/shared": "npm:11.0.0"
+    vue-demi: "npm:>=0.14.10"
+  checksum: 10c0/05ff09b2b2c6367a196d6878f1e4eff85015107f69c53b0e366b0748cf05f3f0b757fdd4b89b5b650da46703a0e974d9826ff1a23b26ce0c2d666edb49a882c0
   languageName: node
   linkType: hard
 
@@ -9693,7 +9693,7 @@ __metadata:
     "@tailwindcss/aspect-ratio": "npm:^0.4.2"
     "@tailwindcss/typography": "npm:^0.5.8"
     "@volar/vue-language-plugin-pug": "npm:^1.6.5"
-    "@vueuse/components": "npm:^10.0.0"
+    "@vueuse/components": "npm:^11.0.0"
     "@vueuse/core": "npm:^11.0.0"
     "@vueuse/nuxt": "npm:^11.0.0"
     daisyui: "npm:^2.51.6"

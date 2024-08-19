@@ -18,7 +18,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@volar/vue-language-plugin-pug": "^1.6.5",
-    "@vueuse/components": "^10.0.0",
+    "@vueuse/components": "^11.0.0",
     "@vueuse/core": "^11.0.0",
     "@vueuse/nuxt": "^11.0.0",
     "daisyui": "^2.51.6",
