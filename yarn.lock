@@ -1482,7 +1482,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.13.0":
+"@nuxt/kit@npm:^3.13.0, @nuxt/kit@npm:^3.13.2":
   version: 3.13.2
   resolution: "@nuxt/kit@npm:3.13.2"
   dependencies:
@@ -3102,7 +3102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^11.0.0":
+"@vueuse/core@npm:11.1.0, @vueuse/core@npm:^11.0.0":
   version: 11.1.0
   resolution: "@vueuse/core@npm:11.1.0"
   dependencies:
@@ -3165,17 +3165,17 @@ __metadata:
   linkType: hard
 
 "@vueuse/nuxt@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@vueuse/nuxt@npm:11.0.0"
+  version: 11.1.0
+  resolution: "@vueuse/nuxt@npm:11.1.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.12.4"
-    "@vueuse/core": "npm:11.0.0"
-    "@vueuse/metadata": "npm:11.0.0"
+    "@nuxt/kit": "npm:^3.13.2"
+    "@vueuse/core": "npm:11.1.0"
+    "@vueuse/metadata": "npm:11.1.0"
     local-pkg: "npm:^0.5.0"
     vue-demi: "npm:>=0.14.10"
   peerDependencies:
     nuxt: ^3.0.0
-  checksum: 10c0/6d6cf42689bfaab3e3e7a0a1ebd50ac564199d5bc8800ace295f7d1f3ce7fc96afc63d37b327e024440c67b076ff126c1fa51b043ae93730d9642dfe8defb691
+  checksum: 10c0/7139e015675649608bf4208ad4aae96f2df9c32d73b529eeaa9c6a9653e24d45dffd89c933f00022653d9218948dc5b201b8f21fce4aac75ccf61016d97322a3
   languageName: node
   linkType: hard
 
