@@ -34,5 +34,5 @@
   "dependencies": {
     "dayjs": "^1.11.7"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.6.0"
 }
